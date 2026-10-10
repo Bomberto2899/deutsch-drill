@@ -11,7 +11,8 @@
     "test": "vitest run",
     "check": "node src/server/check.ts",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json",
-    "install-app": "npm run build && sh scripts/install-app.sh"
+    "install-app": "npm run build && node scripts/install-app.ts",
+    "launch": "node bin/deutsch-drill.ts"
   },
   "dependencies": {
     "smol-toml": "^1.9.1"
@@ -24,5 +25,8 @@
     "typescript": "^6.0.3",
     "vite": "^8.3.4",
     "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }

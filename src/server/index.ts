@@ -1,12 +1,12 @@
 import { createReadStream, existsSync, mkdirSync, statSync, watch } from 'node:fs';
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
-import { extname, join, normalize } from 'node:path';
+import { extname, join, normalize, sep } from 'node:path';
 import type { ConfigError } from '../shared/config.ts';
 import { loadGlobalConfig, saveGlobalConfig } from './global-config.ts';
 import {
   findModule, loadModule, loadModuleState, MODULES, saveModuleSettings, saveModuleState,
 } from './modules/registry.ts';
-import { CONFIG_DIR, DIST_DIR } from './paths.ts';
+import { CONFIG_DIR, DIST_DIR, STATE_DIR } from './paths.ts';
 
 const PORT = Number(process.env.PORT ?? 47321);
 const HOST = '127.0.0.1';
@@ -47,6 +47,25 @@ function serveStatic(req: IncomingMessage, res: ServerResponse) {
 
 // ---- live reload: watch the config dir and tell connected windows to refetch ----
 const clients = new Set<ServerResponse>();
+
+// ---- --exit-when-idle: the launcher starts the server with this, so it stops once the app window is closed.
+// Every open window holds an /api/events connection; when the last one goes away (and no new one arrives
+// within the grace period, which covers reloads), the server exits. Also exits if no window ever connects.
+const EXIT_WHEN_IDLE = process.argv.includes('--exit-when-idle');
+const IDLE_GRACE_MS = 15_000;
+const STARTUP_GRACE_MS = 90_000;
+let idleTimer: NodeJS.Timeout | undefined;
+function scheduleIdleExit(ms: number) {
+  if (!EXIT_WHEN_IDLE) return;
+  clearTimeout(idleTimer);
+  idleTimer = setTimeout(() => {
+    if (clients.size === 0) {
+      console.log('deutsch-drill: no windows open, exiting');
+      process.exit(0);
+    }
+  }, ms);
+}
+scheduleIdleExit(STARTUP_GRACE_MS);
 let reloadTimer: NodeJS.Timeout | undefined;
 function broadcastReload() {
   clearTimeout(reloadTimer);
@@ -62,7 +81,11 @@ async function handleApi(req: IncomingMessage, res: ServerResponse, path: string
     res.writeHead(200, { 'content-type': 'text/event-stream', 'cache-control': 'no-cache', connection: 'keep-alive' });
     res.write('data: hello\n\n');
     clients.add(res);
-    req.on('close', () => clients.delete(res));
+    clearTimeout(idleTimer);
+    req.on('close', () => {
+      clients.delete(res);
+      if (clients.size === 0) scheduleIdleExit(IDLE_GRACE_MS);
+    });
     return;
   }
 
@@ -70,7 +93,7 @@ async function handleApi(req: IncomingMessage, res: ServerResponse, path: string
     if (method === 'PUT') return json(res, 200, { config: saveGlobalConfig(await readBody(req)) });
     const errors: ConfigError[] = [];
     const config = loadGlobalConfig(errors);
-    return json(res, 200, { config, errors, modules: MODULES.map((m) => m.id), configDir: CONFIG_DIR });
+    return json(res, 200, { config, errors, modules: MODULES.map((m) => m.id), configDir: CONFIG_DIR, stateDir: STATE_DIR, sep });
   }
 
   const m = path.match(/^\/api\/modules\/([\w-]+)(\/settings|\/state)?$/);

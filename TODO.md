@@ -74,14 +74,18 @@ Workflow: new requests are added here first, then checked off when done. Every c
 - [x] Tense heading always shown above the inputs; stats tense chart shows only enabled tenses or tenses with answers
 - [x] Tests for all new forms; new sections added to the existing `verbs.toml`
 
+## Done — v0.7 (2026-10-10): Windows port
+- [x] Cross-platform paths: Windows uses `%APPDATA%\deutsch-drill` (settings) and `%LOCALAPPDATA%\deutsch-drill` (progress, browser profile); Linux/macOS unchanged
+- [x] Launcher rewritten in Node (`bin/deutsch-drill.ts`) with `bin/deutsch-drill` (sh) and `bin/deutsch-drill.cmd` shims; finds Edge/Chrome/Chromium/Brave per OS; errors shown as a dialog/notification
+- [x] Server shuts itself down ~15 s after the last app window closes (`--exit-when-idle`), so it no longer depends on the browser process staying alive
+- [x] `npm run install-app` is cross-platform (Node): Linux desktop entry, Windows Start-menu (+ desktop) shortcut with `.ico` icon; `--uninstall`
+- [x] `scripts/setup-windows.ps1`: installs Node.js LTS via winget if needed, `npm ci`, build, shortcut
+- [x] `npm run dev` works on Windows (no npx/shell); `.gitattributes` keeps LF (CRLF for .cmd/.ps1); paths shown in the UI use the OS separator
+- [x] README install instructions for Windows, Linux, macOS; tests for paths and browser detection on each OS
+
 ## Next
 
-- [ ] Portability: make it work on Windows (for a friend). A setup script is fine, but nothing in the repo should be Linux-only. Known Linux-only parts today:
-  - `bin/deutsch-drill` (bash) and `scripts/install-app.sh` (sh, `~/.local/bin`, `.desktop` entry, hicolor icon)
-  - Launcher assumes a `chromium` binary on PATH (Windows: Chrome/Edge, found via the registry or the usual install paths)
-  - Uses `curl` and `notify-send` in the launcher
-  - Config/state paths follow XDG (Windows should use `%APPDATA%` / `%LOCALAPPDATA%`)
-  - Plan: move the launcher logic into a cross-platform Node script (`bin/deutsch-drill.ts`) with thin per-OS shims, a `setup` script per OS (Windows: Start-menu shortcut), and a test run on Windows
+- [ ] Test the Windows setup on a real Windows machine (the friend's): setup script, Start-menu shortcut, Edge app window, settings in `%APPDATA%`. Not testable here (no Windows/PowerShell)
 
 ## Ideas / later
 - [ ] Verbs with both auxiliaries (fahren: ist/hat gefahren; ziehen, treten): accept either in Perfekt

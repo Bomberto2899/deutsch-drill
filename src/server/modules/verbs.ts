@@ -1,5 +1,6 @@
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { STATE_DIR } from '../paths.ts';
 import type { ConfigError } from '../../shared/config.ts';
 import { PERSON_IDS } from '../../shared/modules/verbs/persons.ts';
 import {
@@ -47,7 +48,7 @@ include = ${v(s.filter.include)}
 tags = ${v(s.filter.tags)}
 
 # How "weakness" is measured (stats page and order = "weakest-first").
-# Progress itself is stored in ~/.local/state/deutsch-drill/verbs.json; reset it from the settings page.
+# Progress itself is stored in ${join(STATE_DIR, 'verbs.json')}; reset it from the settings page.
 [progress]
 # Judge each form on its last N answers, so old mistakes stop counting once you've learned it.
 # 0 = every answer ever. Max ${RECENT_CAP}.

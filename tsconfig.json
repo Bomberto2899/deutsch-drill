@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "types": ["node", "svelte"]
   },
-  "include": ["src", "tests", "scripts"]
+  "include": ["src", "tests", "scripts", "bin"]
 }

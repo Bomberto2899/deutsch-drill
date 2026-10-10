@@ -5,12 +5,17 @@ interface ConfigResponse {
   config: GlobalConfig;
   errors: ConfigError[];
   configDir: string;
+  stateDir: string;
+  sep: string;
 }
 
 /** App-wide state: global config, config-file errors, and a counter bumped on every file change. */
 class AppState {
   config = $state<GlobalConfig>(structuredClone(DEFAULT_GLOBAL_CONFIG));
   configDir = $state('');
+  stateDir = $state('');
+  /** Path separator of the machine running the server ("/" or "\\"). */
+  sep = $state('/');
   /** Errors per source ("global", or a module id), merged for the banner. */
   errorsBySource = $state<Record<string, ConfigError[]>>({});
   /** Increments whenever a config file changes on disk; pages refetch when it does. */
@@ -22,8 +27,19 @@ class AppState {
     const r = await api.get<ConfigResponse>('/api/config');
     this.config = r.config;
     this.configDir = r.configDir;
+    this.stateDir = r.stateDir;
+    this.sep = r.sep;
     this.setErrors('global', r.errors);
     applyUi(r.config);
+  }
+
+  /** A path inside the config dir, written the way the OS writes paths. */
+  configPath(...parts: string[]) {
+    return [this.configDir, ...parts].join(this.sep);
+  }
+
+  statePath(...parts: string[]) {
+    return [this.stateDir, ...parts].join(this.sep);
   }
 
   setErrors(source: string, errors: ConfigError[]) {

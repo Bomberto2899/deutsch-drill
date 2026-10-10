@@ -17,7 +17,7 @@
 </script>
 
 <h1><Translated en="Settings">Einstellungen</Translated></h1>
-<SaveStatus {saver} file={`${app.configDir}/config.toml`} />
+<SaveStatus {saver} file={app.configPath('config.toml')} />
 
 <section>
   <h2>Answer checking</h2>

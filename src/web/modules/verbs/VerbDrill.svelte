@@ -105,7 +105,7 @@
       {!store.verbs.length ? 'No verb files found.'
         : filterVerbs(store.verbs, store.settings).length ? 'No verb has any of the enabled forms (e.g. modals have no Imperativ), or no tense is turned on.'
         : 'Your [filter] in verbs.toml excludes every verb.'}
-      Check <span class="mono">{app.configDir}/verbs.toml</span> and <span class="mono">{app.configDir}/verbs/</span>.
+      Check <span class="mono">{app.configPath('verbs.toml')}</span> and <span class="mono">{app.configPath('verbs', '')}</span>.
     </p>
   </div>
 {:else if !rows.length}

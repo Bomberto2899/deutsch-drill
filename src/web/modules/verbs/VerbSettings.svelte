@@ -60,7 +60,7 @@
 </script>
 
 <h1><Translated en="Verbs — Settings">Verben — Einstellungen</Translated></h1>
-<SaveStatus {saver} file={`${app.configDir}/verbs.toml`} />
+<SaveStatus {saver} file={app.configPath('verbs.toml')} />
 
 {#each TENSE_GROUPS as g}
   <section>
@@ -115,7 +115,7 @@
   </Setting>
   <p class="muted note">
     {poolSize} of {store.verbs.length} verbs match. Add or edit verbs as files in
-    <span class="mono">{app.configDir}/verbs/</span>.
+    <span class="mono">{app.configPath('verbs', '')}</span>.
   </p>
 </section>
 
@@ -154,7 +154,7 @@
   onConfirm={() => run(() => store.resetAll(), 'Progress reset.')}>
   <p>This deletes your scores for <strong>{answerCount}</strong> answers and the seen list for <strong>{seenCount}</strong> verbs.
     Stats and weakest-first start from zero.</p>
-  <p class="muted">A backup copy is saved to <span class="mono">~/.local/state/deutsch-drill/verbs.json.bak.*</span>,
+  <p class="muted">A backup copy is saved to <span class="mono">{app.statePath('verbs.json.bak.*')}</span>,
     so it can be restored by hand.</p>
 </ConfirmDialog>
 

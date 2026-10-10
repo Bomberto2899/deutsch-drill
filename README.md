@@ -1,17 +1,59 @@
 # Deutsch Drill
 
 Drill German grammar — conjugation first, more modules later. Svelte frontend, tiny Node backend,
-runs as a Chromium `--app` window with its own profile. Everything is configured through TOML files.
+runs as a browser app window (Edge/Chrome/Chromium `--app`) with its own profile, so your normal browser is
+untouched. Everything is configured through TOML files. Works on Linux, Windows and macOS.
 
-## Run
+## Install
+
+Needs [Node.js](https://nodejs.org) 22.18 or newer, git, and a Chromium-based browser (Edge, Chrome, Chromium
+or Brave — on Windows, Edge is always there).
+
+### Windows
+
+In PowerShell:
+
+```powershell
+git clone https://github.com/Bomberto2899/deutsch-drill.git
+cd deutsch-drill
+powershell -ExecutionPolicy Bypass -File scripts\setup-windows.ps1
+```
+
+The script installs Node.js LTS with `winget` if it's missing or too old, installs dependencies, builds the app
+and adds **Deutsch Drill** to the Start menu (add `-Desktop` for a desktop shortcut too, `-Uninstall` to remove
+the shortcuts). The app opens in an Edge app window. To update: `git pull`, then run the script again.
+
+### Linux
 
 ```sh
-npm install
-npm run install-app   # build + ~/.local/bin/deutsch-drill + desktop entry
+git clone https://github.com/Bomberto2899/deutsch-drill.git && cd deutsch-drill
+npm ci
+npm run install-app   # build + ~/.local/bin/deutsch-drill + desktop entry + icon
 deutsch-drill         # or launch "Deutsch Drill" from the app launcher
 ```
 
-Dev: `npm run dev` (Vite on :5173 with HMR, backend on :47322). Tests: `npm test`.
+To update: `git pull && npm ci && npm run install-app`. Remove with `node scripts/install-app.ts --uninstall`.
+
+### macOS
+
+`npm ci && npm run build`, then start it with `npm run launch` (no Dock/Launchpad entry yet).
+
+### How it runs
+
+The launcher (`bin/deutsch-drill.ts`, with `bin/deutsch-drill` and `bin/deutsch-drill.cmd` as shims) starts the
+backend on `127.0.0.1:47321` if it isn't running and opens the app window. The backend stops by itself about
+15 seconds after the last app window closes. Env overrides: `DEUTSCH_DRILL_PORT`, `DEUTSCH_DRILL_BROWSER`
+(path or command), `DEUTSCH_DRILL_CONFIG`, `DEUTSCH_DRILL_STATE`.
+
+| | Linux / macOS | Windows |
+| --- | --- | --- |
+| Settings & verb files | `~/.config/deutsch-drill/` | `%APPDATA%\deutsch-drill\` |
+| Progress, server log | `~/.local/state/deutsch-drill/` | `%LOCALAPPDATA%\deutsch-drill\state\` |
+| Browser profile | `~/.local/share/deutsch-drill/` | `%LOCALAPPDATA%\deutsch-drill\` |
+
+## Develop
+
+`npm run dev` (Vite on :5173 with HMR, backend on :47322). Tests: `npm test`.
 Validate your config: `npm run check`. Type-check: `npm run typecheck`.
 
 Roadmap and progress: [TODO.md](TODO.md).
@@ -21,7 +63,7 @@ German titles and labels show their English translation on hover (or keyboard fo
 
 ## Stats & progress
 
-Every checked answer is recorded per verb, tense and person in `~/.local/state/deutsch-drill/verbs.json`
+Every checked answer is recorded per verb, tense and person in `verbs.json` in the progress folder (see the table above)
 (totals plus the last 50 results per form). The **📊 Statistics** page of the verbs module shows verbs practised,
 accuracy (all time and as measured by your settings), accuracy by person and by verb type, and the weakest verbs
 with their weakest form.
@@ -38,7 +80,7 @@ Weakest-first sorts verbs by weakness (1 − accuracy) and picks randomly from t
 The settings page can **forget seen verbs** (principal forms show again, scores kept) or **reset all progress**.
 Both ask for confirmation and first save a backup as `verbs.json.bak.<unix-time>` next to the progress file.
 
-## Config — `~/.config/deutsch-drill/`
+## Config — `~/.config/deutsch-drill/` (Windows: `%APPDATA%\deutsch-drill\`)
 
 Seeded on first run; existing files are never overwritten. Edits are picked up live.
 
