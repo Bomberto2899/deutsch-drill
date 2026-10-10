@@ -82,6 +82,7 @@ Workflow: new requests are added here first, then checked off when done. Every c
 - [x] `scripts/setup-windows.ps1`: installs Node.js LTS via winget if needed, `npm ci`, build, shortcut
 - [x] `npm run dev` works on Windows (no npx/shell); `.gitattributes` keeps LF (CRLF for .cmd/.ps1); paths shown in the UI use the OS separator
 - [x] README install instructions for Windows, Linux, macOS; tests for paths and browser detection on each OS
+- [x] Step-by-step Windows guide in the README: from a fresh machine (PowerShell, git via winget), ZIP alternative, updating, uninstalling, troubleshooting table
 
 ## Next
 

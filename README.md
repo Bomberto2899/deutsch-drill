@@ -11,17 +11,59 @@ or Brave — on Windows, Edge is always there).
 
 ### Windows
 
-In PowerShell:
+Step by step, starting from a fresh Windows 10/11 machine:
 
-```powershell
-git clone https://github.com/Bomberto2899/deutsch-drill.git
-cd deutsch-drill
-powershell -ExecutionPolicy Bypass -File scripts\setup-windows.ps1
-```
+1. **Open PowerShell.** Press the Windows key, type `PowerShell` and open **Windows PowerShell** (no need to run
+   it as administrator).
 
-The script installs Node.js LTS with `winget` if it's missing or too old, installs dependencies, builds the app
-and adds **Deutsch Drill** to the Start menu (add `-Desktop` for a desktop shortcut too, `-Uninstall` to remove
-the shortcuts). The app opens in an Edge app window. To update: `git pull`, then run the script again.
+2. **Install git** (skip if `git --version` already prints a version):
+
+   ```powershell
+   winget install --id Git.Git -e
+   ```
+
+   Then **close PowerShell and open a new one**, so it finds `git`.
+
+3. **Download the app.** This puts it in a `deutsch-drill` folder in your user folder (`C:\Users\<you>\deutsch-drill`):
+
+   ```powershell
+   cd ~
+   git clone https://github.com/Bomberto2899/deutsch-drill.git
+   cd deutsch-drill
+   ```
+
+4. **Run the setup script:**
+
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File scripts\setup-windows.ps1
+   ```
+
+   It installs Node.js (via `winget`) if it's missing or too old, installs the app's dependencies, builds it and
+   adds **Deutsch Drill** to the Start menu. Windows may ask for administrator permission once while Node.js is
+   installed — that's expected. Add `-Desktop` at the end for a desktop shortcut too.
+
+5. **Start it:** open the Start menu and launch **Deutsch Drill**. It opens in its own Microsoft Edge window
+   (separate from your normal browser). If Edge shows a welcome screen the first time, just close it.
+
+**Updating:** in PowerShell, `cd ~\deutsch-drill`, then `git pull`, then run the setup script again (step 4).
+
+**Uninstalling:** run the setup script with `-Uninstall` to remove the shortcuts, then delete the
+`deutsch-drill` folder. Your settings and progress stay in `%APPDATA%\deutsch-drill` and
+`%LOCALAPPDATA%\deutsch-drill` — delete those too to remove everything.
+
+**Without git:** on the GitHub page click **Code → Download ZIP**, extract it, open PowerShell in the extracted
+folder (Windows 11: right-click inside the folder → *Open in Terminal*; Windows 10: Shift + right-click →
+*Open PowerShell window here*) and continue with step 4. Updating then
+means downloading the ZIP again.
+
+**If something goes wrong:**
+
+| Problem | Fix |
+| --- | --- |
+| `winget` is not recognized | Install **App Installer** from the Microsoft Store, or install [Node.js LTS](https://nodejs.org) and [Git](https://git-scm.com) by hand, then repeat. |
+| "Node.js … still isn't available" | Close PowerShell, open a new one, `cd ~\deutsch-drill` and run the script again. |
+| "running scripts is disabled on this system" | Use the exact command from step 4 (with `-ExecutionPolicy Bypass`). |
+| The app window doesn't open | Check `%LOCALAPPDATA%\deutsch-drill\state\server.log`, and that Microsoft Edge or Google Chrome is installed. |
 
 ### Linux
 
