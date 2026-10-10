@@ -1,0 +1,12 @@
+infinitive   = "werden"
+third_person = "wird"
+praeteritum  = "wurde"
+perfekt      = "ist geworden"
+konjunktiv_ii = "würde"   # Konjunktiv II (one-word form)
+meaning      = "to become, to get"
+example      = "Im Herbst wird es früh dunkel."
+example_translation = "In autumn it gets dark early."
+tags         = ["auxiliary"]
+
+[overrides.imperativ]
+du = "werde"

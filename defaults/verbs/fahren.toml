@@ -1,0 +1,8 @@
+infinitive   = "fahren"
+third_person = "fährt"
+praeteritum  = "fuhr"
+perfekt      = "ist gefahren"
+meaning      = "to drive, to go (by vehicle)"
+example      = "Sie fährt mit dem Fahrrad zur Uni."
+example_translation = "She cycles to university."
+tags         = ["transitive"]

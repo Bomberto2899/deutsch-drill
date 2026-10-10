@@ -1,0 +1,7 @@
+infinitive   = "springen"
+third_person = "springt"
+praeteritum  = "sprang"
+perfekt      = "ist gesprungen"
+meaning      = "to jump"
+example      = "Die Katze springt auf den Tisch."
+example_translation = "The cat jumps onto the table."

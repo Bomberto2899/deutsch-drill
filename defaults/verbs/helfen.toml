@@ -1,0 +1,8 @@
+infinitive   = "helfen"
+third_person = "hilft"
+praeteritum  = "half"
+perfekt      = "hat geholfen"
+konjunktiv_ii = "hülfe|hälfe"   # Konjunktiv II (one-word form)
+meaning      = "to help"
+example      = "Hilfst du mir beim Umzug?"
+example_translation = "Will you help me with the move?"

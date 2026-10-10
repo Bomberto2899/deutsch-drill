@@ -1,0 +1,8 @@
+infinitive   = "können"
+third_person = "kann"
+praeteritum  = "konnte"
+perfekt      = "hat gekonnt"
+meaning      = "can, to be able to"
+example      = "Kannst du mir bitte helfen?"
+example_translation = "Can you help me, please?"
+tags         = ["modal"]

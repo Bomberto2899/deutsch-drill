@@ -1,0 +1,8 @@
+infinitive   = "sterben"
+third_person = "stirbt"
+praeteritum  = "starb"
+perfekt      = "ist gestorben"
+konjunktiv_ii = "stürbe"   # Konjunktiv II (one-word form)
+meaning      = "to die"
+example      = "Ohne Wasser stirbt die Pflanze."
+example_translation = "Without water the plant dies."

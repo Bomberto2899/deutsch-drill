@@ -1,0 +1,8 @@
+infinitive   = "brauchen"
+third_person = "braucht"
+praeteritum  = "brauchte"
+perfekt      = "hat gebraucht"
+meaning      = "to need"
+example      = "Brauchst du Hilfe?"
+example_translation = "Do you need help?"
+tags         = ["transitive"]

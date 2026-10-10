@@ -1,0 +1,8 @@
+infinitive   = "kennen"
+third_person = "kennt"
+praeteritum  = "kannte"
+perfekt      = "hat gekannt"
+konjunktiv_ii = "kennte"   # Konjunktiv II (one-word form)
+meaning      = "to know (be familiar with)"
+example      = "Kennst du diesen Film?"
+example_translation = "Do you know this film?"

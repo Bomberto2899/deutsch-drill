@@ -1,0 +1,8 @@
+infinitive   = "mögen"
+third_person = "mag"
+praeteritum  = "mochte"
+perfekt      = "hat gemocht"
+meaning      = "to like"
+example      = "Ich mag keinen schwarzen Kaffee."
+example_translation = "I don't like black coffee."
+tags         = ["modal"]

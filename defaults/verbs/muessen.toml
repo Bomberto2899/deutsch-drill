@@ -1,0 +1,8 @@
+infinitive   = "müssen"
+third_person = "muss"
+praeteritum  = "musste"
+perfekt      = "hat gemusst"
+meaning      = "must, to have to"
+example      = "Ich muss morgen früh aufstehen."
+example_translation = "I have to get up early tomorrow."
+tags         = ["modal"]

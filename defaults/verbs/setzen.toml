@@ -1,0 +1,8 @@
+infinitive   = "setzen"
+third_person = "setzt"
+praeteritum  = "setzte"
+perfekt      = "hat gesetzt"
+meaning      = "to set, to seat"
+example      = "Setz dich bitte!"
+example_translation = "Please sit down!"
+tags         = ["transitive"]

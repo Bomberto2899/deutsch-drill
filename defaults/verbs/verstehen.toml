@@ -1,0 +1,9 @@
+infinitive   = "verstehen"
+third_person = "versteht"
+praeteritum  = "verstand"
+perfekt      = "hat verstanden"
+konjunktiv_ii = "verstünde|verstände"   # Konjunktiv II (one-word form)
+meaning      = "to understand"
+example      = "Verstehst du die Frage?"
+example_translation = "Do you understand the question?"
+tags         = ["transitive"]

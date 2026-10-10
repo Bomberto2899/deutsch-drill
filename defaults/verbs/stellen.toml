@@ -1,0 +1,8 @@
+infinitive   = "stellen"
+third_person = "stellt"
+praeteritum  = "stellte"
+perfekt      = "hat gestellt"
+meaning      = "to put (upright)"
+example      = "Stell die Flasche in den Kühlschrank."
+example_translation = "Put the bottle in the fridge."
+tags         = ["transitive"]

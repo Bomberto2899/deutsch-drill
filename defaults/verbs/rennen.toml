@@ -1,0 +1,8 @@
+infinitive   = "rennen"
+third_person = "rennt"
+praeteritum  = "rannte"
+perfekt      = "ist gerannt"
+konjunktiv_ii = "rennte"   # Konjunktiv II (one-word form)
+meaning      = "to run, to race"
+example      = "Die Kinder rennen zum Spielplatz."
+example_translation = "The children run to the playground."

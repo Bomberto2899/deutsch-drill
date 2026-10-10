@@ -1,0 +1,8 @@
+infinitive   = "anrufen"
+third_person = "ruft an"
+praeteritum  = "rief an"
+perfekt      = "hat angerufen"
+meaning      = "to call (on the phone)"
+example      = "Ich rufe dich heute Abend an."
+example_translation = "I'll call you tonight."
+tags         = ["transitive"]

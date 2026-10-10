@@ -1,0 +1,8 @@
+infinitive   = "verlieren"
+third_person = "verliert"
+praeteritum  = "verlor"
+perfekt      = "hat verloren"
+meaning      = "to lose"
+example      = "Ich verliere ständig meine Handschuhe."
+example_translation = "I keep losing my gloves."
+tags         = ["transitive"]

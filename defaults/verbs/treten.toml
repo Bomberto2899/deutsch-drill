@@ -1,0 +1,8 @@
+infinitive   = "treten"
+third_person = "tritt"
+praeteritum  = "trat"
+perfekt      = "ist getreten"
+meaning      = "to step, to kick"
+example      = "Bitte tritt zur Seite."
+example_translation = "Please step aside."
+tags         = ["transitive"]

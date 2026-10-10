@@ -1,0 +1,8 @@
+infinitive   = "studieren"
+third_person = "studiert"
+praeteritum  = "studierte"
+perfekt      = "hat studiert"
+meaning      = "to study (at university)"
+example      = "Sie studiert Medizin in Wien."
+example_translation = "She studies medicine in Vienna."
+tags         = ["transitive"]

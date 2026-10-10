@@ -1,0 +1,8 @@
+infinitive   = "essen"
+third_person = "isst"
+praeteritum  = "aß"
+perfekt      = "hat gegessen"
+meaning      = "to eat"
+example      = "Was isst du zum Frühstück?"
+example_translation = "What do you eat for breakfast?"
+tags         = ["transitive"]

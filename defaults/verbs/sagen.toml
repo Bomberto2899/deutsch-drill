@@ -1,0 +1,8 @@
+infinitive   = "sagen"
+third_person = "sagt"
+praeteritum  = "sagte"
+perfekt      = "hat gesagt"
+meaning      = "to say"
+example      = "Was sagst du dazu?"
+example_translation = "What do you say to that?"
+tags         = ["transitive"]

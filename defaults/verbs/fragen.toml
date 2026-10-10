@@ -1,0 +1,8 @@
+infinitive   = "fragen"
+third_person = "fragt"
+praeteritum  = "fragte"
+perfekt      = "hat gefragt"
+meaning      = "to ask"
+example      = "Darf ich dich etwas fragen?"
+example_translation = "Can I ask you something?"
+tags         = ["transitive"]

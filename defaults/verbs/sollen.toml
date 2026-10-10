@@ -1,0 +1,8 @@
+infinitive   = "sollen"
+third_person = "soll"
+praeteritum  = "sollte"
+perfekt      = "hat gesollt"
+meaning      = "should, to be supposed to"
+example      = "Du sollst mehr Wasser trinken."
+example_translation = "You should drink more water."
+tags         = ["modal"]

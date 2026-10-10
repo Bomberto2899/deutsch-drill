@@ -1,0 +1,8 @@
+infinitive   = "benutzen"
+third_person = "benutzt"
+praeteritum  = "benutzte"
+perfekt      = "hat benutzt"
+meaning      = "to use"
+example      = "Benutzt du oft dein Fahrrad?"
+example_translation = "Do you use your bike often?"
+tags         = ["transitive"]

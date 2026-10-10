@@ -1,0 +1,8 @@
+infinitive   = "verkaufen"
+third_person = "verkauft"
+praeteritum  = "verkaufte"
+perfekt      = "hat verkauft"
+meaning      = "to sell"
+example      = "Er verkauft sein altes Auto."
+example_translation = "He's selling his old car."
+tags         = ["transitive"]

@@ -1,0 +1,8 @@
+infinitive   = "nehmen"
+third_person = "nimmt"
+praeteritum  = "nahm"
+perfekt      = "hat genommen"
+meaning      = "to take"
+example      = "Ich nehme den Bus zur Arbeit."
+example_translation = "I take the bus to work."
+tags         = ["transitive"]

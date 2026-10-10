@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Launch Deutsch Drill as a standalone Chromium app window (own profile, so your normal browser is untouched).
+# The backend server starts with the window and stops when the window closes.
+set -euo pipefail
+
+APP_DIR="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+PORT="${DEUTSCH_DRILL_PORT:-47321}"
+URL="http://127.0.0.1:$PORT"
+DATA_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/deutsch-drill"
+STATE_DIR="${XDG_STATE_HOME:-$HOME/.local/state}/deutsch-drill"
+BROWSER="${DEUTSCH_DRILL_BROWSER:-chromium}"
+mkdir -p "$DATA_DIR" "$STATE_DIR"
+
+up() { curl -sf -o /dev/null "$URL/api/config"; }
+
+server_pid=""
+if ! up; then
+  [[ -f "$APP_DIR/dist/index.html" ]] || { notify-send "Deutsch Drill" "Frontend not built: run npm run build in $APP_DIR" 2>/dev/null; exit 1; }
+  PORT="$PORT" node "$APP_DIR/src/server/index.ts" >"$STATE_DIR/server.log" 2>&1 &
+  server_pid=$!
+  for _ in $(seq 50); do up && break; sleep 0.1; done
+  up || { echo "server failed to start, see $STATE_DIR/server.log" >&2; kill "$server_pid" 2>/dev/null; exit 1; }
+fi
+cleanup() { [[ -n "$server_pid" ]] && kill "$server_pid" 2>/dev/null || true; }
+trap cleanup EXIT
+
+"$BROWSER" --app="$URL" --user-data-dir="$DATA_DIR/chromium" --class=deutsch-drill \
+  --no-first-run --no-default-browser-check

@@ -1,0 +1,8 @@
+infinitive   = "putzen"
+third_person = "putzt"
+praeteritum  = "putzte"
+perfekt      = "hat geputzt"
+meaning      = "to clean"
+example      = "Putzt du heute das Bad?"
+example_translation = "Are you cleaning the bathroom today?"
+tags         = ["transitive"]

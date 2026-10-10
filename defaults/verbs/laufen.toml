@@ -1,0 +1,7 @@
+infinitive   = "laufen"
+third_person = "läuft"
+praeteritum  = "lief"
+perfekt      = "ist gelaufen"
+meaning      = "to run, to walk"
+example      = "Der Hund läuft durch den Park."
+example_translation = "The dog runs through the park."

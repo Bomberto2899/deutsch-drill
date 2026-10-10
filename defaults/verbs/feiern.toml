@@ -1,0 +1,8 @@
+infinitive   = "feiern"
+third_person = "feiert"
+praeteritum  = "feierte"
+perfekt      = "hat gefeiert"
+meaning      = "to celebrate"
+example      = "Wir feiern heute ihren Geburtstag."
+example_translation = "We're celebrating her birthday today."
+tags         = ["transitive"]

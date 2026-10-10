@@ -1,0 +1,8 @@
+infinitive   = "mitnehmen"
+third_person = "nimmt mit"
+praeteritum  = "nahm mit"
+perfekt      = "hat mitgenommen"
+meaning      = "to take along"
+example      = "Nimmst du einen Regenschirm mit?"
+example_translation = "Are you taking an umbrella?"
+tags         = ["transitive"]

@@ -1,0 +1,8 @@
+infinitive   = "versuchen"
+third_person = "versucht"
+praeteritum  = "versuchte"
+perfekt      = "hat versucht"
+meaning      = "to try"
+example      = "Ich versuche, pünktlich zu sein."
+example_translation = "I try to be on time."
+tags         = ["transitive"]

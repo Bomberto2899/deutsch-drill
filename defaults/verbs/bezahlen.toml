@@ -1,0 +1,8 @@
+infinitive   = "bezahlen"
+third_person = "bezahlt"
+praeteritum  = "bezahlte"
+perfekt      = "hat bezahlt"
+meaning      = "to pay"
+example      = "Kann ich mit Karte bezahlen?"
+example_translation = "Can I pay by card?"
+tags         = ["transitive"]

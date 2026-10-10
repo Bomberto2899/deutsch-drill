@@ -1,0 +1,8 @@
+infinitive   = "suchen"
+third_person = "sucht"
+praeteritum  = "suchte"
+perfekt      = "hat gesucht"
+meaning      = "to look for, to search"
+example      = "Ich suche meinen Schlüssel."
+example_translation = "I'm looking for my key."
+tags         = ["transitive"]

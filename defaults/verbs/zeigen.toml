@@ -1,0 +1,8 @@
+infinitive   = "zeigen"
+third_person = "zeigt"
+praeteritum  = "zeigte"
+perfekt      = "hat gezeigt"
+meaning      = "to show"
+example      = "Zeigst du mir deine Fotos?"
+example_translation = "Will you show me your photos?"
+tags         = ["transitive"]

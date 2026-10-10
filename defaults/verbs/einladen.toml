@@ -1,0 +1,8 @@
+infinitive   = "einladen"
+third_person = "lädt ein"
+praeteritum  = "lud ein"
+perfekt      = "hat eingeladen"
+meaning      = "to invite"
+example      = "Er lädt uns zu seiner Party ein."
+example_translation = "He's inviting us to his party."
+tags         = ["transitive"]

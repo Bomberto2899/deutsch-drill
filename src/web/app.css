@@ -1,0 +1,97 @@
+:root {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --surface-2: #eeece6;
+  --border: #dad7cf;
+  --text: #1d1d1f;
+  --muted: #6b6a66;
+  --accent: #c2410c;
+  --accent-soft: #fde7da;
+  --good: #15803d;
+  --good-soft: #dcf3e3;
+  --bad: #b91c1c;
+  --bad-soft: #fbe0e0;
+  --warn-soft: #fff4d6;
+  --radius: 10px;
+  --mono: 'JetBrainsMono Nerd Font', 'JetBrains Mono', ui-monospace, monospace;
+  --sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #15161c;
+    --surface: #1d1e26;
+    --surface-2: #262833;
+    --border: #353846;
+    --text: #e6e6ea;
+    --muted: #8c8fa1;
+    --accent: #fb923c;
+    --accent-soft: #3a2618;
+    --good: #4ade80;
+    --good-soft: #17301f;
+    --bad: #f87171;
+    --bad-soft: #3a1c1c;
+    --warn-soft: #3a3218;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #15161c;
+  --surface: #1d1e26;
+  --surface-2: #262833;
+  --border: #353846;
+  --text: #e6e6ea;
+  --muted: #8c8fa1;
+  --accent: #fb923c;
+  --accent-soft: #3a2618;
+  --good: #4ade80;
+  --good-soft: #17301f;
+  --bad: #f87171;
+  --bad-soft: #3a1c1c;
+  --warn-soft: #3a3218;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: var(--font-size, 18px);
+  line-height: 1.45;
+}
+button, input, select { font: inherit; color: inherit; }
+button {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+}
+button:hover { border-color: var(--muted); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.ghost { background: transparent; border-color: transparent; }
+button.ghost:hover { background: var(--surface-2); }
+input[type='text'], input[type='number'], select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35em 0.6em;
+}
+input:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+kbd {
+  font-family: var(--mono);
+  font-size: 0.75em;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 0 0.35em;
+  color: var(--muted);
+}
+.muted { color: var(--muted); }
+.mono { font-family: var(--mono); }

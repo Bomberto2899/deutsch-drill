@@ -1,0 +1,8 @@
+infinitive   = "entscheiden"
+third_person = "entscheidet"
+praeteritum  = "entschied"
+perfekt      = "hat entschieden"
+meaning      = "to decide"
+example      = "Du entscheidest, wohin wir fahren."
+example_translation = "You decide where we go."
+tags         = ["transitive"]

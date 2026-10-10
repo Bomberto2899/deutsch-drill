@@ -1,0 +1,8 @@
+infinitive   = "brechen"
+third_person = "bricht"
+praeteritum  = "brach"
+perfekt      = "hat gebrochen"
+meaning      = "to break"
+example      = "Das Eis bricht unter seinen Füßen."
+example_translation = "The ice breaks under his feet."
+tags         = ["transitive"]

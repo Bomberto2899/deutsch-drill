@@ -1,0 +1,7 @@
+infinitive   = "liegen"
+third_person = "liegt"
+praeteritum  = "lag"
+perfekt      = "hat gelegen"
+meaning      = "to lie (be lying)"
+example      = "Das Buch liegt auf dem Bett."
+example_translation = "The book is lying on the bed."

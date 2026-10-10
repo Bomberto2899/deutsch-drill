@@ -1,0 +1,8 @@
+infinitive   = "geben"
+third_person = "gibt"
+praeteritum  = "gab"
+perfekt      = "hat gegeben"
+meaning      = "to give"
+example      = "Er gibt mir das Buch."
+example_translation = "He gives me the book."
+tags         = ["transitive"]

@@ -1,0 +1,8 @@
+infinitive   = "lernen"
+third_person = "lernt"
+praeteritum  = "lernte"
+perfekt      = "hat gelernt"
+meaning      = "to learn, to study"
+example      = "Ich lerne seit einem Jahr Deutsch."
+example_translation = "I've been learning German for a year."
+tags         = ["transitive"]

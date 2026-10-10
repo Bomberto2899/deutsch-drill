@@ -1,0 +1,8 @@
+infinitive   = "ziehen"
+third_person = "zieht"
+praeteritum  = "zog"
+perfekt      = "hat gezogen"
+meaning      = "to pull, to move"
+example      = "Das Pferd zieht den Wagen."
+example_translation = "The horse pulls the cart."
+tags         = ["transitive"]

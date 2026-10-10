@@ -1,0 +1,8 @@
+infinitive   = "legen"
+third_person = "legt"
+praeteritum  = "legte"
+perfekt      = "hat gelegt"
+meaning      = "to put (lying down)"
+example      = "Ich lege das Buch auf den Tisch."
+example_translation = "I put the book on the table."
+tags         = ["transitive"]

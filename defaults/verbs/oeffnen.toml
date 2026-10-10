@@ -1,0 +1,8 @@
+infinitive   = "öffnen"
+third_person = "öffnet"
+praeteritum  = "öffnete"
+perfekt      = "hat geöffnet"
+meaning      = "to open"
+example      = "Öffnest du bitte die Tür?"
+example_translation = "Will you open the door, please?"
+tags         = ["transitive"]

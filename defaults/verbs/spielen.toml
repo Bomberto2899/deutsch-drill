@@ -1,0 +1,8 @@
+infinitive   = "spielen"
+third_person = "spielt"
+praeteritum  = "spielte"
+perfekt      = "hat gespielt"
+meaning      = "to play"
+example      = "Die Kinder spielen im Garten."
+example_translation = "The children are playing in the garden."
+tags         = ["transitive"]

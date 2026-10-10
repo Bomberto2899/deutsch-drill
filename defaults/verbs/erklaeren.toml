@@ -1,0 +1,8 @@
+infinitive   = "erklären"
+third_person = "erklärt"
+praeteritum  = "erklärte"
+perfekt      = "hat erklärt"
+meaning      = "to explain"
+example      = "Kannst du mir das erklären?"
+example_translation = "Can you explain that to me?"
+tags         = ["transitive"]

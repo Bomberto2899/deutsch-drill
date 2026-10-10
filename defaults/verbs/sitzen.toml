@@ -1,0 +1,7 @@
+infinitive   = "sitzen"
+third_person = "sitzt"
+praeteritum  = "saß"
+perfekt      = "hat gesessen"
+meaning      = "to sit"
+example      = "Er sitzt den ganzen Tag am Computer."
+example_translation = "He sits at the computer all day."

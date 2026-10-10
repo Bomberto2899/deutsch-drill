@@ -1,0 +1,8 @@
+infinitive   = "erzählen"
+third_person = "erzählt"
+praeteritum  = "erzählte"
+perfekt      = "hat erzählt"
+meaning      = "to tell (a story)"
+example      = "Opa erzählt gern von früher."
+example_translation = "Grandpa likes telling stories about the old days."
+tags         = ["transitive"]

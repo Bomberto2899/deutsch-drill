@@ -1,0 +1,8 @@
+infinitive   = "schreiben"
+third_person = "schreibt"
+praeteritum  = "schrieb"
+perfekt      = "hat geschrieben"
+meaning      = "to write"
+example      = "Sie schreibt einen Brief an ihre Oma."
+example_translation = "She's writing a letter to her grandma."
+tags         = ["transitive"]

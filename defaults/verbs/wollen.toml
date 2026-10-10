@@ -1,0 +1,8 @@
+infinitive   = "wollen"
+third_person = "will"
+praeteritum  = "wollte"
+perfekt      = "hat gewollt"
+meaning      = "to want"
+example      = "Sie will später Ärztin werden."
+example_translation = "She wants to become a doctor later."
+tags         = ["modal"]

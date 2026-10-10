@@ -1,0 +1,8 @@
+infinitive   = "besuchen"
+third_person = "besucht"
+praeteritum  = "besuchte"
+perfekt      = "hat besucht"
+meaning      = "to visit"
+example      = "Am Wochenende besuche ich meine Eltern."
+example_translation = "At the weekend I'm visiting my parents."
+tags         = ["transitive"]

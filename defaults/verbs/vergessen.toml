@@ -1,0 +1,8 @@
+infinitive   = "vergessen"
+third_person = "vergisst"
+praeteritum  = "vergaß"
+perfekt      = "hat vergessen"
+meaning      = "to forget"
+example      = "Er vergisst immer seinen Schlüssel."
+example_translation = "He always forgets his key."
+tags         = ["transitive"]

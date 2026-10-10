@@ -1,0 +1,9 @@
+infinitive   = "nennen"
+third_person = "nennt"
+praeteritum  = "nannte"
+perfekt      = "hat genannt"
+konjunktiv_ii = "nennte"   # Konjunktiv II (one-word form)
+meaning      = "to name, to call"
+example      = "Wir nennen ihn einfach Max."
+example_translation = "We just call him Max."
+tags         = ["transitive"]

@@ -1,0 +1,7 @@
+infinitive   = "warten"
+third_person = "wartet"
+praeteritum  = "wartete"
+perfekt      = "hat gewartet"
+meaning      = "to wait"
+example      = "Wir warten auf den Bus."
+example_translation = "We're waiting for the bus."

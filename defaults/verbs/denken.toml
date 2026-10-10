@@ -1,0 +1,8 @@
+infinitive   = "denken"
+third_person = "denkt"
+praeteritum  = "dachte"
+perfekt      = "hat gedacht"
+konjunktiv_ii = "dächte"   # Konjunktiv II (one-word form)
+meaning      = "to think"
+example      = "Ich denke oft an dich."
+example_translation = "I often think of you."

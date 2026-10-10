@@ -1,0 +1,7 @@
+infinitive   = "fliegen"
+third_person = "fliegt"
+praeteritum  = "flog"
+perfekt      = "ist geflogen"
+meaning      = "to fly"
+example      = "Wir fliegen nächste Woche nach Spanien."
+example_translation = "We're flying to Spain next week."

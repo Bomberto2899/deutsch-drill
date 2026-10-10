@@ -1,0 +1,8 @@
+infinitive   = "singen"
+third_person = "singt"
+praeteritum  = "sang"
+perfekt      = "hat gesungen"
+meaning      = "to sing"
+example      = "Sie singt in einem Chor."
+example_translation = "She sings in a choir."
+tags         = ["transitive"]

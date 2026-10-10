@@ -1,0 +1,9 @@
+infinitive   = "bringen"
+third_person = "bringt"
+praeteritum  = "brachte"
+perfekt      = "hat gebracht"
+konjunktiv_ii = "brächte"   # Konjunktiv II (one-word form)
+meaning      = "to bring"
+example      = "Bringst du den Wein mit?"
+example_translation = "Will you bring the wine?"
+tags         = ["transitive"]

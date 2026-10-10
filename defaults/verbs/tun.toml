@@ -1,0 +1,8 @@
+infinitive   = "tun"
+third_person = "tut"
+praeteritum  = "tat"
+perfekt      = "hat getan"
+meaning      = "to do"
+example      = "Was tust du da?"
+example_translation = "What are you doing there?"
+tags         = ["transitive"]

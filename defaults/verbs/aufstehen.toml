@@ -1,0 +1,8 @@
+infinitive   = "aufstehen"
+third_person = "steht auf"
+praeteritum  = "stand auf"
+perfekt      = "ist aufgestanden"
+konjunktiv_ii = "stünde auf|stände auf"   # Konjunktiv II (one-word form)
+meaning      = "to get up"
+example      = "Ich stehe jeden Tag um sechs auf."
+example_translation = "I get up at six every day."

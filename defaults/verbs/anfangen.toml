@@ -1,0 +1,8 @@
+infinitive   = "anfangen"
+third_person = "fängt an"
+praeteritum  = "fing an"
+perfekt      = "hat angefangen"
+meaning      = "to start, to begin"
+example      = "Wann fängt der Kurs an?"
+example_translation = "When does the course start?"
+tags         = ["transitive"]

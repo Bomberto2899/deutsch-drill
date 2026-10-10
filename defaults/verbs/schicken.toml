@@ -1,0 +1,8 @@
+infinitive   = "schicken"
+third_person = "schickt"
+praeteritum  = "schickte"
+perfekt      = "hat geschickt"
+meaning      = "to send"
+example      = "Schickst du mir die Adresse?"
+example_translation = "Will you send me the address?"
+tags         = ["transitive"]

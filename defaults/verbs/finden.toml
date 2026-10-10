@@ -1,0 +1,8 @@
+infinitive   = "finden"
+third_person = "findet"
+praeteritum  = "fand"
+perfekt      = "hat gefunden"
+meaning      = "to find"
+example      = "Ich finde meine Brille nicht."
+example_translation = "I can't find my glasses."
+tags         = ["transitive"]

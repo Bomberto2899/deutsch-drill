@@ -1,0 +1,8 @@
+infinitive   = "hören"
+third_person = "hört"
+praeteritum  = "hörte"
+perfekt      = "hat gehört"
+meaning      = "to hear, to listen"
+example      = "Hörst du die Musik?"
+example_translation = "Do you hear the music?"
+tags         = ["transitive"]

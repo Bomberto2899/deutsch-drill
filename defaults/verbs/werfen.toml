@@ -1,0 +1,9 @@
+infinitive   = "werfen"
+third_person = "wirft"
+praeteritum  = "warf"
+perfekt      = "hat geworfen"
+konjunktiv_ii = "würfe"   # Konjunktiv II (one-word form)
+meaning      = "to throw"
+example      = "Das Kind wirft den Ball."
+example_translation = "The child throws the ball."
+tags         = ["transitive"]

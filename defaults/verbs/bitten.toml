@@ -1,0 +1,8 @@
+infinitive   = "bitten"
+third_person = "bittet"
+praeteritum  = "bat"
+perfekt      = "hat gebeten"
+meaning      = "to ask (for), to request"
+example      = "Ich bitte dich um einen Gefallen."
+example_translation = "I'm asking you for a favour."
+tags         = ["transitive"]

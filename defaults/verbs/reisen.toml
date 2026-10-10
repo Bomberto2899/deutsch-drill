@@ -1,0 +1,7 @@
+infinitive   = "reisen"
+third_person = "reist"
+praeteritum  = "reiste"
+perfekt      = "ist gereist"
+meaning      = "to travel"
+example      = "Sie reist gern allein."
+example_translation = "She likes travelling alone."

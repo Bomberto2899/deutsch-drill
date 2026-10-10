@@ -1,0 +1,8 @@
+infinitive   = "wissen"
+third_person = "weiß"
+praeteritum  = "wusste"
+perfekt      = "hat gewusst"
+konjunktiv_ii = "wüsste"   # Konjunktiv II (one-word form)
+meaning      = "to know (a fact)"
+example      = "Weißt du, wie spät es ist?"
+example_translation = "Do you know what time it is?"

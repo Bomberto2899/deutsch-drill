@@ -1,0 +1,8 @@
+infinitive   = "rufen"
+third_person = "ruft"
+praeteritum  = "rief"
+perfekt      = "hat gerufen"
+meaning      = "to call, to shout"
+example      = "Die Mutter ruft die Kinder zum Essen."
+example_translation = "The mother calls the children to dinner."
+tags         = ["transitive"]

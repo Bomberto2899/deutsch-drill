@@ -1,0 +1,8 @@
+infinitive   = "dürfen"
+third_person = "darf"
+praeteritum  = "durfte"
+perfekt      = "hat gedurft"
+meaning      = "may, to be allowed to"
+example      = "Darf ich das Fenster öffnen?"
+example_translation = "May I open the window?"
+tags         = ["modal"]

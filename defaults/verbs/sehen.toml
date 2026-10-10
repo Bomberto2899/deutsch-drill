@@ -1,0 +1,8 @@
+infinitive   = "sehen"
+third_person = "sieht"
+praeteritum  = "sah"
+perfekt      = "hat gesehen"
+meaning      = "to see"
+example      = "Siehst du den Vogel dort?"
+example_translation = "Do you see the bird over there?"
+tags         = ["transitive"]

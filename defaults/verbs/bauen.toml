@@ -1,0 +1,8 @@
+infinitive   = "bauen"
+third_person = "baut"
+praeteritum  = "baute"
+perfekt      = "hat gebaut"
+meaning      = "to build"
+example      = "Sie bauen ein Haus am See."
+example_translation = "They're building a house by the lake."
+tags         = ["transitive"]

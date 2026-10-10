@@ -1,0 +1,8 @@
+infinitive   = "kochen"
+third_person = "kocht"
+praeteritum  = "kochte"
+perfekt      = "hat gekocht"
+meaning      = "to cook"
+example      = "Mein Vater kocht heute Abend."
+example_translation = "My father is cooking tonight."
+tags         = ["transitive"]

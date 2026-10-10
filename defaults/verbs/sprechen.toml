@@ -1,0 +1,8 @@
+infinitive   = "sprechen"
+third_person = "spricht"
+praeteritum  = "sprach"
+perfekt      = "hat gesprochen"
+meaning      = "to speak"
+example      = "Sprichst du Deutsch?"
+example_translation = "Do you speak German?"
+tags         = ["transitive"]

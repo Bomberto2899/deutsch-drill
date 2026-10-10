@@ -1,0 +1,12 @@
+infinitive   = "haben"
+third_person = "hat"
+praeteritum  = "hatte"
+perfekt      = "hat gehabt"
+konjunktiv_ii = "hätte"   # Konjunktiv II (one-word form)
+meaning      = "to have"
+example      = "Wir haben zwei Katzen und einen Hund."
+example_translation = "We have two cats and a dog."
+tags         = ["auxiliary"]
+
+[overrides.imperativ]
+du = "hab|habe"

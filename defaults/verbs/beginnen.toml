@@ -1,0 +1,8 @@
+infinitive   = "beginnen"
+third_person = "beginnt"
+praeteritum  = "begann"
+perfekt      = "hat begonnen"
+meaning      = "to begin"
+example      = "Der Film beginnt um acht Uhr."
+example_translation = "The film starts at eight o'clock."
+tags         = ["transitive"]

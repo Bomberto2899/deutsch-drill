@@ -1,0 +1,7 @@
+infinitive   = "arbeiten"
+third_person = "arbeitet"
+praeteritum  = "arbeitete"
+perfekt      = "hat gearbeitet"
+meaning      = "to work"
+example      = "Sie arbeitet in einem Krankenhaus."
+example_translation = "She works in a hospital."

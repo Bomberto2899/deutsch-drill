@@ -1,0 +1,8 @@
+infinitive   = "trinken"
+third_person = "trinkt"
+praeteritum  = "trank"
+perfekt      = "hat getrunken"
+meaning      = "to drink"
+example      = "Er trinkt morgens immer Tee."
+example_translation = "He always drinks tea in the morning."
+tags         = ["transitive"]

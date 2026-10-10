@@ -1,0 +1,8 @@
+infinitive   = "treffen"
+third_person = "trifft"
+praeteritum  = "traf"
+perfekt      = "hat getroffen"
+meaning      = "to meet, to hit"
+example      = "Ich treffe meine Freunde im Café."
+example_translation = "I meet my friends at the café."
+tags         = ["transitive"]

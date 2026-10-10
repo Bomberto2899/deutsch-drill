@@ -1,0 +1,8 @@
+infinitive   = "lesen"
+third_person = "liest"
+praeteritum  = "las"
+perfekt      = "hat gelesen"
+meaning      = "to read"
+example      = "Sie liest jeden Abend ein Kapitel."
+example_translation = "She reads a chapter every evening."
+tags         = ["transitive"]

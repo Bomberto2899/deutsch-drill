@@ -1,0 +1,8 @@
+infinitive   = "stehen"
+third_person = "steht"
+praeteritum  = "stand"
+perfekt      = "hat gestanden"
+konjunktiv_ii = "stünde|stände"   # Konjunktiv II (one-word form)
+meaning      = "to stand"
+example      = "Die Vase steht auf dem Tisch."
+example_translation = "The vase is on the table."

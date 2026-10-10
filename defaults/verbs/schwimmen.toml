@@ -1,0 +1,7 @@
+infinitive   = "schwimmen"
+third_person = "schwimmt"
+praeteritum  = "schwamm"
+perfekt      = "ist geschwommen"
+meaning      = "to swim"
+example      = "Im Sommer schwimmen wir im See."
+example_translation = "In summer we swim in the lake."

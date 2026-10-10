@@ -1,0 +1,35 @@
+infinitive   = "sein"
+third_person = "ist"
+praeteritum  = "war"
+perfekt      = "ist gewesen"
+meaning      = "to be"
+example      = "Ich bin heute sehr müde."
+example_translation = "I'm very tired today."
+tags         = ["auxiliary"]
+
+# sein is too irregular for the rules, so every form is spelled out.
+[overrides.praesens]
+ich = "bin"
+du  = "bist"
+er  = "ist"
+wir = "sind"
+ihr = "seid"
+sie = "sind"
+
+[overrides.imperativ]
+du  = "sei"
+ihr = "seid"
+sie = "seien Sie"
+wir = "seien wir"
+
+[overrides.konjunktiv2]
+du  = "wärst|wärest"
+ihr = "wärt|wäret"
+
+[overrides.konjunktiv1]
+ich = "sei"
+du  = "seist|seiest"
+er  = "sei"
+wir = "seien"
+ihr = "seiet"
+sie = "seien"

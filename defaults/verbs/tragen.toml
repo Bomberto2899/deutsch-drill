@@ -1,0 +1,8 @@
+infinitive   = "tragen"
+third_person = "trägt"
+praeteritum  = "trug"
+perfekt      = "hat getragen"
+meaning      = "to carry, to wear"
+example      = "Er trägt heute eine blaue Jacke."
+example_translation = "He's wearing a blue jacket today."
+tags         = ["transitive"]

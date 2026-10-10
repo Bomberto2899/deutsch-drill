@@ -1,0 +1,8 @@
+infinitive   = "waschen"
+third_person = "wäscht"
+praeteritum  = "wusch"
+perfekt      = "hat gewaschen"
+meaning      = "to wash"
+example      = "Wäschst du heute die Wäsche?"
+example_translation = "Are you doing the laundry today?"
+tags         = ["transitive"]

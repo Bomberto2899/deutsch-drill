@@ -1,0 +1,8 @@
+infinitive   = "sammeln"
+third_person = "sammelt"
+praeteritum  = "sammelte"
+perfekt      = "hat gesammelt"
+meaning      = "to collect"
+example      = "Er sammelt alte Briefmarken."
+example_translation = "He collects old stamps."
+tags         = ["transitive"]

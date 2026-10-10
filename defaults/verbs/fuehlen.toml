@@ -1,0 +1,8 @@
+infinitive   = "fühlen"
+third_person = "fühlt"
+praeteritum  = "fühlte"
+perfekt      = "hat gefühlt"
+meaning      = "to feel"
+example      = "Ich fühle mich heute gut."
+example_translation = "I feel good today."
+tags         = ["transitive"]

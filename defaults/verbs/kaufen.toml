@@ -1,0 +1,8 @@
+infinitive   = "kaufen"
+third_person = "kauft"
+praeteritum  = "kaufte"
+perfekt      = "hat gekauft"
+meaning      = "to buy"
+example      = "Wir kaufen ein neues Sofa."
+example_translation = "We're buying a new sofa."
+tags         = ["transitive"]

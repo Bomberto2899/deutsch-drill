@@ -1,0 +1,8 @@
+infinitive   = "schlagen"
+third_person = "schlägt"
+praeteritum  = "schlug"
+perfekt      = "hat geschlagen"
+meaning      = "to hit, to beat"
+example      = "Mein Herz schlägt schneller."
+example_translation = "My heart beats faster."
+tags         = ["transitive"]

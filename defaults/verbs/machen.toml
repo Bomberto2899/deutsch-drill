@@ -1,0 +1,8 @@
+infinitive   = "machen"
+third_person = "macht"
+praeteritum  = "machte"
+perfekt      = "hat gemacht"
+meaning      = "to do, to make"
+example      = "Was machst du am Wochenende?"
+example_translation = "What are you doing at the weekend?"
+tags         = ["transitive"]

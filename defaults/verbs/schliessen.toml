@@ -1,0 +1,8 @@
+infinitive   = "schließen"
+third_person = "schließt"
+praeteritum  = "schloss"
+perfekt      = "hat geschlossen"
+meaning      = "to close"
+example      = "Das Geschäft schließt um 20 Uhr."
+example_translation = "The shop closes at 8 pm."
+tags         = ["transitive"]

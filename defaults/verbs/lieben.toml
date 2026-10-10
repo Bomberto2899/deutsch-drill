@@ -1,0 +1,8 @@
+infinitive   = "lieben"
+third_person = "liebt"
+praeteritum  = "liebte"
+perfekt      = "hat geliebt"
+meaning      = "to love"
+example      = "Ich liebe dich."
+example_translation = "I love you."
+tags         = ["transitive"]

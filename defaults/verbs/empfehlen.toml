@@ -1,0 +1,8 @@
+infinitive   = "empfehlen"
+third_person = "empfiehlt"
+praeteritum  = "empfahl"
+perfekt      = "hat empfohlen"
+meaning      = "to recommend"
+example      = "Was empfiehlst du mir?"
+example_translation = "What do you recommend?"
+tags         = ["transitive"]

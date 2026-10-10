@@ -1,0 +1,8 @@
+infinitive   = "gewinnen"
+third_person = "gewinnt"
+praeteritum  = "gewann"
+perfekt      = "hat gewonnen"
+meaning      = "to win"
+example      = "Unsere Mannschaft gewinnt fast immer."
+example_translation = "Our team almost always wins."
+tags         = ["transitive"]

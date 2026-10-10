@@ -1,0 +1,8 @@
+infinitive   = "halten"
+third_person = "hält"
+praeteritum  = "hielt"
+perfekt      = "hat gehalten"
+meaning      = "to hold, to stop"
+example      = "Der Zug hält nicht in diesem Dorf."
+example_translation = "The train doesn't stop in this village."
+tags         = ["transitive"]
