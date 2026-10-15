@@ -1,0 +1,34 @@
+preposition = "auf"
+meaning     = "on (horizontal surfaces); onto; to (events, offices)"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. Also verbs like warten auf + Akk. Contraction: aufs = auf das."
+
+[[sentences]]
+text        = "Das Buch liegt [auf] dem Tisch."
+translation = "The book is on the table."
+case        = "dativ"
+
+[[sentences]]
+text        = "Ich lege das Buch [auf] den Tisch."
+translation = "I'm putting the book on the table."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Die Katze springt [aufs] Sofa."
+translation = "The cat jumps onto the sofa."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Wir warten schon lange [auf] den Bus."
+translation = "We've been waiting for the bus for a long time."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Die Kinder spielen [auf] dem Spielplatz."
+translation = "The children are playing at the playground."
+case        = "dativ"
+
+[[sentences]]
+text        = "Er muss morgen [aufs] Amt."
+translation = "He has to go to the authorities tomorrow."
+case        = "akkusativ"

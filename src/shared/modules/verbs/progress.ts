@@ -1,35 +1,14 @@
+import { accuracy, recentScore, type Score } from '../../progress.ts';
 import { PERSON_IDS } from './persons.ts';
 import type { FormStat, VerbSettings, VerbState } from './settings.ts';
 import { TENSES } from './tenses/index.ts';
 import type { Verb } from './types.ts';
 
-/** How many answers per form are kept in `recent` (the upper bound for progress.recent_answers). */
-export const RECENT_CAP = 50;
-
-export interface Score {
-  right: number;
-  wrong: number;
-}
-
-export const accuracy = (s: Score): number | null => (s.right + s.wrong ? s.right / (s.right + s.wrong) : null);
-
-/** Add one answer to a form's stat, keeping the last RECENT_CAP results ('1' right, '0' wrong). */
-export function recordAnswer(stat: FormStat | undefined, correct: boolean): FormStat {
-  const s = stat ?? { right: 0, wrong: 0, recent: '' };
-  return {
-    right: s.right + (correct ? 1 : 0),
-    wrong: s.wrong + (correct ? 0 : 1),
-    recent: ((s.recent ?? '') + (correct ? '1' : '0')).slice(-RECENT_CAP),
-  };
-}
+export { accuracy, RECENT_CAP, recordAnswer, type Score } from '../../progress.ts';
 
 /** A form's score under the [progress] settings: all-time, or only its last N answers. */
 export function formScore(stat: FormStat, s: VerbSettings): Score {
-  const n = s.progress.recent_answers;
-  if (n <= 0 || stat.recent === undefined) return { right: stat.right, wrong: stat.wrong };
-  const recent = stat.recent.slice(-n);
-  const right = [...recent].filter((c) => c === '1').length;
-  return { right, wrong: recent.length - right };
+  return recentScore(stat, s.progress.recent_answers);
 }
 
 /** Form keys (`tense:person`) currently drilled, per verbs.toml. */

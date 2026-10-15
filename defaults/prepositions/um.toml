@@ -1,0 +1,28 @@
+preposition = "um"
+meaning     = "around; at (clock time); about"
+case        = "akkusativ"
+notes       = "um acht Uhr = at eight o'clock. Also: es geht um …, sich kümmern um …, bitten um … Contraction: ums = um das."
+
+[[sentences]]
+text        = "Der Film beginnt [um] acht Uhr."
+translation = "The film starts at eight o'clock."
+
+[[sentences]]
+text        = "Wir sitzen alle [um] den Tisch herum."
+translation = "We're all sitting around the table."
+
+[[sentences]]
+text        = "Das Café ist gleich [um] die Ecke."
+translation = "The café is just around the corner."
+
+[[sentences]]
+text        = "In dem Film geht es [um] eine Familie."
+translation = "The film is about a family."
+
+[[sentences]]
+text        = "Ich kümmere mich heute [um] die Kinder."
+translation = "I'm looking after the children today."
+
+[[sentences]]
+text        = "Die Erde dreht sich [um] die Sonne."
+translation = "The earth revolves around the sun."

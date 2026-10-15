@@ -1,0 +1,25 @@
+preposition = "statt"
+meaning     = "instead of"
+case        = "genitiv"
+notes       = "Also anstatt (accepted as an answer). Without an article the genitive is often invisible: Tee statt Kaffee."
+accept      = ["anstatt"]
+
+[[sentences]]
+text        = "Ich trinke heute Tee [statt] Kaffee."
+translation = "I'm drinking tea instead of coffee today."
+
+[[sentences]]
+text        = "Er kam [statt] seines Bruders zum Treffen."
+translation = "He came to the meeting instead of his brother."
+
+[[sentences]]
+text        = "Wir nehmen den Zug [statt] des Autos."
+translation = "We're taking the train instead of the car."
+
+[[sentences]]
+text        = "Sie hat [statt] eines Briefes eine E-Mail geschrieben."
+translation = "She wrote an email instead of a letter."
+
+[[sentences]]
+text        = "Kauf lieber Obst [statt] Süßigkeiten."
+translation = "Better buy fruit instead of sweets."

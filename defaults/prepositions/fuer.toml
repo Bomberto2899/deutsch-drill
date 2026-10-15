@@ -1,0 +1,28 @@
+preposition = "für"
+meaning     = "for"
+case        = "akkusativ"
+notes       = "Also with verbs and adjectives: sich interessieren für, danken für. Contraction: fürs = für das."
+
+[[sentences]]
+text        = "Das Geschenk ist [für] meine Mutter."
+translation = "The present is for my mother."
+
+[[sentences]]
+text        = "Danke [für] deine Hilfe!"
+translation = "Thanks for your help!"
+
+[[sentences]]
+text        = "Ich interessiere mich [für] Musik."
+translation = "I'm interested in music."
+
+[[sentences]]
+text        = "Wir haben das Auto [für] 5000 Euro gekauft."
+translation = "We bought the car for 5000 euros."
+
+[[sentences]]
+text        = "Der Koffer ist zu schwer [für] mich."
+translation = "The suitcase is too heavy for me."
+
+[[sentences]]
+text        = "Sie arbeitet schon lange [für] diese Firma."
+translation = "She has worked for this company for a long time."

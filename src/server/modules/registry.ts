@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import type { ConfigError } from '../../shared/config.ts';
 import { DEFAULTS_DIR, moduleConfigFile, moduleDataDir, moduleStateFile, STATE_DIR } from '../paths.ts';
 import { mergeSettings, readToml } from '../toml.ts';
+import { prepositions } from './prepositions.ts';
 import { verbs } from './verbs.ts';
 
 /**
@@ -21,7 +22,7 @@ export interface ServerModule<S = any, D = any> {
 }
 
 /** Register new modules here. */
-export const MODULES: ServerModule[] = [verbs];
+export const MODULES: ServerModule[] = [verbs, prepositions];
 
 export function findModule(id: string): ServerModule | undefined {
   return MODULES.find((m) => m.id === id);

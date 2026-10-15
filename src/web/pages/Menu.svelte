@@ -23,11 +23,6 @@
       <p>{m.description}</p>
     </a>
   {/each}
-  <div class="tile soon">
-    <h2><Translated en="Prepositions">Präpositionen</Translated></h2>
-    <div class="sub muted">Prepositions</div>
-    <p class="muted">Coming later.</p>
-  </div>
 </div>
 
 <style>
@@ -54,5 +49,4 @@
   h2 { margin: 0; font-size: 1.2em; }
   .sub { font-size: 0.85em; }
   p { margin: 0.6rem 0 0; font-size: 0.9em; }
-  .soon { opacity: 0.55; border-style: dashed; }
 </style>

@@ -1,0 +1,28 @@
+preposition = "gegen"
+meaning     = "against; around (approximate time)"
+case        = "akkusativ"
+notes       = "gegen acht Uhr = around eight. Also: etwas gegen jemanden haben, ein Mittel gegen …"
+
+[[sentences]]
+text        = "Wir spielen heute [gegen] Bayern München."
+translation = "We're playing against Bayern Munich today."
+
+[[sentences]]
+text        = "Das Auto ist [gegen] einen Baum gefahren."
+translation = "The car drove into a tree."
+
+[[sentences]]
+text        = "Ich habe nichts [gegen] dich."
+translation = "I have nothing against you."
+
+[[sentences]]
+text        = "Hast du ein Mittel [gegen] Kopfschmerzen?"
+translation = "Do you have something for a headache?"
+
+[[sentences]]
+text        = "Wir kommen [gegen] acht Uhr an."
+translation = "We'll arrive around eight o'clock."
+
+[[sentences]]
+text        = "Viele Menschen demonstrieren [gegen] den Krieg."
+translation = "Many people are demonstrating against the war."

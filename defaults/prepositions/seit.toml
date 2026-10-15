@@ -1,0 +1,28 @@
+preposition = "seit"
+meaning     = "since; for (a period up to now)"
+case        = "dativ"
+notes       = "Used with the present tense for something still going on: Ich wohne seit zwei Jahren hier."
+
+[[sentences]]
+text        = "Ich lerne [seit] drei Jahren Deutsch."
+translation = "I've been learning German for three years."
+
+[[sentences]]
+text        = "Sie wohnt [seit] 2020 in Hamburg."
+translation = "She's lived in Hamburg since 2020."
+
+[[sentences]]
+text        = "Wir warten schon [seit] einer Stunde."
+translation = "We've been waiting for an hour."
+
+[[sentences]]
+text        = "Er fährt [seit] seinem Unfall viel vorsichtiger."
+translation = "He has driven much more carefully since his accident."
+
+[[sentences]]
+text        = "Ich habe ihn [seit] Weihnachten nicht gesehen."
+translation = "I haven't seen him since Christmas."
+
+[[sentences]]
+text        = "Es regnet schon [seit] gestern."
+translation = "It's been raining since yesterday."

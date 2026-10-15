@@ -1,0 +1,28 @@
+preposition = "ohne"
+meaning     = "without"
+case        = "akkusativ"
+notes       = "Often used without an article: ohne Zucker, ohne Probleme."
+
+[[sentences]]
+text        = "Ich trinke Kaffee [ohne] Zucker."
+translation = "I drink coffee without sugar."
+
+[[sentences]]
+text        = "Er ist [ohne] seinen Schlüssel aus dem Haus gegangen."
+translation = "He left the house without his key."
+
+[[sentences]]
+text        = "Wir fahren dieses Jahr [ohne] die Kinder in den Urlaub."
+translation = "This year we're going on holiday without the kids."
+
+[[sentences]]
+text        = "Sie hat das Formular [ohne] Probleme ausgefüllt."
+translation = "She filled in the form without any problems."
+
+[[sentences]]
+text        = "Ein Leben [ohne] Musik wäre langweilig."
+translation = "A life without music would be boring."
+
+[[sentences]]
+text        = "Ich gehe nie [ohne] meinen Regenschirm los."
+translation = "I never leave without my umbrella."

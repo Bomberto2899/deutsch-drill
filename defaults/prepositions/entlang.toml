@@ -1,0 +1,24 @@
+preposition = "entlang"
+meaning     = "along"
+case        = "akkusativ"
+notes       = "Usually comes after the noun, with the accusative: den Fluss entlang. Placed before the noun it takes the genitive or dative (entlang des Flusses)."
+
+[[sentences]]
+text        = "Wir gehen den Fluss [entlang]."
+translation = "We're walking along the river."
+
+[[sentences]]
+text        = "Fahren Sie die Straße [entlang] bis zur Ampel."
+translation = "Drive along the street as far as the traffic lights."
+
+[[sentences]]
+text        = "Er joggt jeden Morgen den Strand [entlang]."
+translation = "He jogs along the beach every morning."
+
+[[sentences]]
+text        = "Die Kinder rennen den Weg [entlang]."
+translation = "The children run along the path."
+
+[[sentences]]
+text        = "Wir sind die ganze Küste [entlang] gefahren."
+translation = "We drove along the whole coast."

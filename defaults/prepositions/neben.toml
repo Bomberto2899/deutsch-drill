@@ -1,0 +1,29 @@
+preposition = "neben"
+meaning     = "next to, beside"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ."
+
+[[sentences]]
+text        = "Der Stuhl steht [neben] dem Tisch."
+translation = "The chair is next to the table."
+case        = "dativ"
+
+[[sentences]]
+text        = "Stell den Stuhl bitte [neben] den Tisch."
+translation = "Please put the chair next to the table."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Darf ich mich [neben] dich setzen?"
+translation = "May I sit next to you?"
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Im Kino saß ich [neben] meiner Schwester."
+translation = "At the cinema I sat next to my sister."
+case        = "dativ"
+
+[[sentences]]
+text        = "Die Bank ist direkt [neben] der Post."
+translation = "The bank is right next to the post office."
+case        = "dativ"

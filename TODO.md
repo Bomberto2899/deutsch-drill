@@ -84,6 +84,15 @@ Workflow: new requests are added here first, then checked off when done. Every c
 - [x] README install instructions for Windows, Linux, macOS; tests for paths and browser detection on each OS
 - [x] Step-by-step Windows guide in the README: from a fresh machine (PowerShell, git via winget), ZIP alternative, updating, uninstalling, troubleshooting table
 
+## Done — v0.8 (2026-10-15): Prepositions module
+- [x] Drill: a few sentences share one gap; type the preposition that fits all of them (same checking rules as verbs)
+- [x] Feedback: gaps filled in (contractions shown), meaning, case badge and notes; Akk · wohin? / Dat · wo? per sentence for two-way prepositions; meaning of a wrong guess that is itself a preposition
+- [x] 29 prepositions in `defaults/prepositions/` (Akkusativ, Dativ, two-way, Genitiv), 5–6 sentences each with English translations
+- [x] `prepositions.toml`: order (random / alphabetical / weakest-first), sentences per round, translations, filter by case / list / tags, `[progress]`; settings page with reset
+- [x] Rounds for two-way prepositions always mix Akkusativ and Dativ sentences
+- [x] Progress per preposition in `prepositions.json`; shared progress helpers moved to `src/shared/progress.ts`
+- [x] Tests: validation, sentence picking, filters, order, and every shipped file (gaps are the preposition or a contraction of it)
+
 ## Next
 
 - [ ] Test the Windows setup on a real Windows machine (the friend's): setup script, Start-menu shortcut, Edge app window, settings in `%APPDATA%`. Not testable here (no Windows/PowerShell)
@@ -93,4 +102,7 @@ Workflow: new requests are added here first, then checked off when done. Every c
 - [ ] In-app verb editor / adder
 - [ ] Follow the Omarchy theme
 - [ ] Reflexive verbs (sich freuen → freue mich)
-- [ ] Next modules: prepositions + case, articles / adjective endings
+- [ ] Next modules: articles / adjective endings
+- [ ] Prepositions: stats page (accuracy by case, weakest prepositions)
+- [ ] Prepositions: verb + preposition combos (warten auf, denken an, sich freuen über) as a tag or own set
+- [ ] Prepositions: also ask for the case in two-way sentences (Akk/Dat buttons)

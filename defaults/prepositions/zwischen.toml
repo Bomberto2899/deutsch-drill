@@ -1,0 +1,29 @@
+preposition = "zwischen"
+meaning     = "between"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. Time (zwischen drei und vier Uhr) takes the dative."
+
+[[sentences]]
+text        = "Die Bank steht [zwischen] zwei Bäumen."
+translation = "The bench stands between two trees."
+case        = "dativ"
+
+[[sentences]]
+text        = "Ich habe den Zettel [zwischen] die Bücher gelegt."
+translation = "I put the note between the books."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Wir treffen uns [zwischen] drei und vier Uhr."
+translation = "We'll meet between three and four o'clock."
+case        = "dativ"
+
+[[sentences]]
+text        = "Köln liegt [zwischen] Bonn und Düsseldorf."
+translation = "Cologne lies between Bonn and Düsseldorf."
+case        = "dativ"
+
+[[sentences]]
+text        = "Das Kind setzt sich [zwischen] seine Eltern."
+translation = "The child sits down between its parents."
+case        = "akkusativ"

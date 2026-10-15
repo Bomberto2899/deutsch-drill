@@ -1,0 +1,28 @@
+preposition = "nach"
+meaning     = "to (cities, countries, home); after; according to"
+case        = "dativ"
+notes       = "nach Berlin, nach Hause, nach links. As \"according to\" it can follow the noun: meiner Meinung nach."
+
+[[sentences]]
+text        = "Morgen fliegen wir [nach] Berlin."
+translation = "Tomorrow we're flying to Berlin."
+
+[[sentences]]
+text        = "Wir gehen [nach] dem Essen spazieren."
+translation = "We're going for a walk after the meal."
+
+[[sentences]]
+text        = "Ich gehe jetzt [nach] Hause."
+translation = "I'm going home now."
+
+[[sentences]]
+text        = "Es ist schon zehn [nach] acht."
+translation = "It's already ten past eight."
+
+[[sentences]]
+text        = "Meiner Meinung [nach] ist das falsch."
+translation = "In my opinion, that's wrong."
+
+[[sentences]]
+text        = "Ein Tourist fragt [nach] dem Weg zum Bahnhof."
+translation = "A tourist asks for the way to the station."

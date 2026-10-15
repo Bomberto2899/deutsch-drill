@@ -1,0 +1,28 @@
+preposition = "von"
+meaning     = "from; of; by (passive)"
+case        = "dativ"
+notes       = "Contraction: vom = von dem. In the passive it names the doer: von Goethe geschrieben."
+
+[[sentences]]
+text        = "Das Geschenk ist [von] meiner Oma."
+translation = "The present is from my grandma."
+
+[[sentences]]
+text        = "Ich komme gerade [vom] Arzt."
+translation = "I've just come from the doctor's."
+
+[[sentences]]
+text        = "Er ist ein alter Freund [von] mir."
+translation = "He's an old friend of mine."
+
+[[sentences]]
+text        = "Das Buch wurde [von] Goethe geschrieben."
+translation = "The book was written by Goethe."
+
+[[sentences]]
+text        = "Der Zug fährt [von] Berlin nach München."
+translation = "The train goes from Berlin to Munich."
+
+[[sentences]]
+text        = "Ich träume [von] einem Haus am Meer."
+translation = "I dream of a house by the sea."

@@ -1,3 +1,4 @@
+import type { FormStat } from '../../progress.ts';
 import type { PersonId } from './types.ts';
 import { TENSES } from './tenses/index.ts';
 
@@ -42,12 +43,7 @@ export const DEFAULT_VERB_SETTINGS: VerbSettings = {
   progress: { recent_answers: 10, only_enabled_forms: true, unseen_weakness: 0.5 },
 };
 
-export interface FormStat {
-  right: number;
-  wrong: number;
-  /** Last answers, oldest first: '1' right, '0' wrong (missing in progress saved before v0.3). */
-  recent?: string;
-}
+export type { FormStat } from '../../progress.ts';
 
 /** Per-verb progress, stored in ~/.local/state/deutsch-drill/verbs.json */
 export interface VerbState {

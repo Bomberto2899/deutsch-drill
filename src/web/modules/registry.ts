@@ -2,6 +2,8 @@ import type { Component } from 'svelte';
 import VerbDrill from './verbs/VerbDrill.svelte';
 import VerbSettings from './verbs/VerbSettings.svelte';
 import VerbStats from './verbs/VerbStats.svelte';
+import PrepositionDrill from './prepositions/PrepositionDrill.svelte';
+import PrepositionSettings from './prepositions/PrepositionSettings.svelte';
 
 /** A sub-page of a module, at #/m/<module>/<id>. Shown as a button in the top bar. */
 export interface ModulePage {
@@ -37,6 +39,16 @@ export const MODULES: ClientModule[] = [
     pages: [
       { id: 'stats', title: 'Statistik', en: 'Statistics', icon: '📊', component: VerbStats },
       { id: 'settings', title: 'Einstellungen', en: 'Settings', icon: '⚙', component: VerbSettings },
+    ],
+  },
+  {
+    id: 'prepositions',
+    title: 'Präpositionen',
+    en: 'Prepositions',
+    description: 'Find the preposition that fits every sentence, and the case it takes.',
+    Drill: PrepositionDrill,
+    pages: [
+      { id: 'settings', title: 'Einstellungen', en: 'Settings', icon: '⚙', component: PrepositionSettings },
     ],
   },
 ];

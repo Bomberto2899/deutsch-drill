@@ -1,0 +1,28 @@
+preposition = "bis"
+meaning     = "until; up to, as far as; by"
+case        = "akkusativ"
+notes       = "Usually without an article (bis Montag, bis Hamburg). With an article it combines with another preposition: bis zum Bahnhof, bis an die Grenze."
+
+[[sentences]]
+text        = "Der Laden ist [bis] 20 Uhr geöffnet."
+translation = "The shop is open until 8 pm."
+
+[[sentences]]
+text        = "Ich bleibe noch [bis] Montag hier."
+translation = "I'm staying here until Monday."
+
+[[sentences]]
+text        = "Dieser Zug fährt nur [bis] Hamburg."
+translation = "This train only goes as far as Hamburg."
+
+[[sentences]]
+text        = "Ich arbeite von Montag [bis] Freitag."
+translation = "I work from Monday to Friday."
+
+[[sentences]]
+text        = "Der Bericht muss [bis] morgen fertig sein."
+translation = "The report has to be finished by tomorrow."
+
+[[sentences]]
+text        = "Kannst du schon [bis] hundert zählen?"
+translation = "Can you count to a hundred yet?"

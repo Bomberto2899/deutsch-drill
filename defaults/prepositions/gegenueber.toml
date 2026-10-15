@@ -1,0 +1,24 @@
+preposition = "gegenüber"
+meaning     = "opposite; towards (someone)"
+case        = "dativ"
+notes       = "Can stand before or after the noun, and always after a pronoun: mir gegenüber."
+
+[[sentences]]
+text        = "Die Apotheke ist [gegenüber] dem Bahnhof."
+translation = "The pharmacy is opposite the station."
+
+[[sentences]]
+text        = "Er wohnt direkt mir [gegenüber]."
+translation = "He lives right opposite me."
+
+[[sentences]]
+text        = "Sie ist ihren Kollegen [gegenüber] sehr freundlich."
+translation = "She is very friendly towards her colleagues."
+
+[[sentences]]
+text        = "Das Café liegt [gegenüber] der Kirche."
+translation = "The café is opposite the church."
+
+[[sentences]]
+text        = "Der Park liegt genau [gegenüber] der Schule."
+translation = "The park is right opposite the school."

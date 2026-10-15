@@ -1,0 +1,28 @@
+preposition = "mit"
+meaning     = "with; by (means of transport)"
+case        = "dativ"
+notes       = "mit dem Bus / Zug / Auto = by bus / train / car."
+
+[[sentences]]
+text        = "Ich fahre [mit] dem Bus zur Arbeit."
+translation = "I go to work by bus."
+
+[[sentences]]
+text        = "Sie telefoniert gerade [mit] ihrer Freundin."
+translation = "She's on the phone with her friend."
+
+[[sentences]]
+text        = "Ich trinke Tee immer [mit] Milch."
+translation = "I always drink tea with milk."
+
+[[sentences]]
+text        = "Er schreibt lieber [mit] einem Bleistift."
+translation = "He prefers to write with a pencil."
+
+[[sentences]]
+text        = "Bist du [mit] deiner Arbeit zufrieden?"
+translation = "Are you happy with your work?"
+
+[[sentences]]
+text        = "Wir essen die Pizza [mit] den Händen."
+translation = "We're eating the pizza with our hands."

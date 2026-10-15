@@ -1,0 +1,34 @@
+preposition = "in"
+meaning     = "in; into; in (months, seasons)"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. Time (im Mai, in einer Woche) takes the dative. Contractions: im = in dem, ins = in das."
+
+[[sentences]]
+text        = "Wir gehen heute Abend [ins] Kino."
+translation = "We're going to the cinema tonight."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Ich wohne [in] einer kleinen Wohnung."
+translation = "I live in a small flat."
+case        = "dativ"
+
+[[sentences]]
+text        = "Er stellt die Milch [in] den Kühlschrank."
+translation = "He's putting the milk in the fridge."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Die Kinder sind noch [in] der Schule."
+translation = "The children are still at school."
+case        = "dativ"
+
+[[sentences]]
+text        = "Ich habe [im] Mai Geburtstag."
+translation = "My birthday is in May."
+case        = "dativ"
+
+[[sentences]]
+text        = "Sie springt [ins] Wasser."
+translation = "She jumps into the water."
+case        = "akkusativ"

@@ -1,0 +1,24 @@
+preposition = "wegen"
+meaning     = "because of"
+case        = "genitiv"
+notes       = "In everyday speech often with the dative: wegen dem Regen. With pronouns: meinetwegen, deinetwegen."
+
+[[sentences]]
+text        = "Das Spiel fällt [wegen] des Regens aus."
+translation = "The game is cancelled because of the rain."
+
+[[sentences]]
+text        = "Ich bin [wegen] meiner Erkältung zu Hause geblieben."
+translation = "I stayed at home because of my cold."
+
+[[sentences]]
+text        = "Er kam [wegen] des Staus zu spät."
+translation = "He was late because of the traffic jam."
+
+[[sentences]]
+text        = "Ich rufe [wegen] Ihrer Anzeige an."
+translation = "I'm calling about your advert."
+
+[[sentences]]
+text        = "Der Flughafen ist [wegen] eines Streiks geschlossen."
+translation = "The airport is closed because of a strike."

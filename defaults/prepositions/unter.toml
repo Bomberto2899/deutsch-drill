@@ -1,0 +1,29 @@
+preposition = "unter"
+meaning     = "under, below; among"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. \"Among\" and \"below a number\" take the dative."
+
+[[sentences]]
+text        = "Die Katze schläft [unter] dem Bett."
+translation = "The cat is sleeping under the bed."
+case        = "dativ"
+
+[[sentences]]
+text        = "Der Ball rollt [unter] das Sofa."
+translation = "The ball rolls under the sofa."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Das bleibt aber [unter] uns!"
+translation = "But that stays between us!"
+case        = "dativ"
+
+[[sentences]]
+text        = "Kinder [unter] sechs Jahren zahlen nichts."
+translation = "Children under six pay nothing."
+case        = "dativ"
+
+[[sentences]]
+text        = "Er legt den Schlüssel [unter] die Fußmatte."
+translation = "He puts the key under the doormat."
+case        = "akkusativ"

@@ -1,0 +1,28 @@
+preposition = "bei"
+meaning     = "at, near; at someone's place; while (doing)"
+case        = "dativ"
+notes       = "bei = at a person's home or workplace, near a place, or during an activity. Contraction: beim = bei dem."
+
+[[sentences]]
+text        = "Ich wohne noch [bei] meinen Eltern."
+translation = "I still live with my parents."
+
+[[sentences]]
+text        = "Sie arbeitet [bei] einer großen Bank."
+translation = "She works at a big bank."
+
+[[sentences]]
+text        = "Potsdam liegt [bei] Berlin."
+translation = "Potsdam is near Berlin."
+
+[[sentences]]
+text        = "Er hat sich [beim] Fußballspielen verletzt."
+translation = "He got hurt playing football."
+
+[[sentences]]
+text        = "Ich war gestern [beim] Zahnarzt."
+translation = "I was at the dentist yesterday."
+
+[[sentences]]
+text        = "Kannst du mir [bei] den Hausaufgaben helfen?"
+translation = "Can you help me with the homework?"

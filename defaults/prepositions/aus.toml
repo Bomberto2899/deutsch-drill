@@ -1,0 +1,28 @@
+preposition = "aus"
+meaning     = "out of; from (origin); made of"
+case        = "dativ"
+notes       = "aus = out of / from where you originate (aus Schweden); von = from a starting point or person."
+
+[[sentences]]
+text        = "Ich komme [aus] Schweden."
+translation = "I'm from Sweden."
+
+[[sentences]]
+text        = "Er nimmt das Handy [aus] der Tasche."
+translation = "He takes the phone out of his bag."
+
+[[sentences]]
+text        = "Der Tisch ist [aus] Holz."
+translation = "The table is made of wood."
+
+[[sentences]]
+text        = "Sie geht jeden Morgen um sieben [aus] dem Haus."
+translation = "She leaves the house at seven every morning."
+
+[[sentences]]
+text        = "Er trinkt direkt [aus] der Flasche."
+translation = "He drinks straight from the bottle."
+
+[[sentences]]
+text        = "Das Kind hat [aus] Angst geweint."
+translation = "The child cried out of fear."

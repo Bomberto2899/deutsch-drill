@@ -1,0 +1,29 @@
+preposition = "hinter"
+meaning     = "behind"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ."
+
+[[sentences]]
+text        = "Der Garten liegt [hinter] dem Haus."
+translation = "The garden is behind the house."
+case        = "dativ"
+
+[[sentences]]
+text        = "Die Katze läuft [hinter] das Sofa."
+translation = "The cat runs behind the sofa."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Er versteckt sich [hinter] der Tür."
+translation = "He's hiding behind the door."
+case        = "dativ"
+
+[[sentences]]
+text        = "Stell die Leiter bitte [hinter] die Garage."
+translation = "Please put the ladder behind the garage."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Das Auto parkt [hinter] dem Bus."
+translation = "The car is parked behind the bus."
+case        = "dativ"

@@ -1,0 +1,28 @@
+preposition = "zu"
+meaning     = "to (people, places, events); for (occasions)"
+case        = "dativ"
+notes       = "Contractions: zum = zu dem, zur = zu der. zu for people and buildings, nach for cities and countries."
+
+[[sentences]]
+text        = "Ich gehe kurz [zum] Bäcker."
+translation = "I'm just popping to the bakery."
+
+[[sentences]]
+text        = "Kommst du heute Abend [zu] mir?"
+translation = "Are you coming over to my place tonight?"
+
+[[sentences]]
+text        = "Sie fährt jeden Tag mit dem Rad [zur] Arbeit."
+translation = "She cycles to work every day."
+
+[[sentences]]
+text        = "Was gibt es heute [zum] Abendessen?"
+translation = "What's for dinner tonight?"
+
+[[sentences]]
+text        = "Wir gratulieren dir herzlich [zum] Geburtstag."
+translation = "Happy birthday from all of us."
+
+[[sentences]]
+text        = "Er hat mir [zu] Weihnachten ein Buch geschenkt."
+translation = "He gave me a book for Christmas."

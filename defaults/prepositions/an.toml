@@ -1,0 +1,34 @@
+preposition = "an"
+meaning     = "at, on (vertical surfaces, edges); to"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. Also for days and dates (am Montag) and verbs like denken an + Akk. Contractions: am = an dem, ans = an das."
+
+[[sentences]]
+text        = "Das Bild hängt [an] der Wand."
+translation = "The picture is hanging on the wall."
+case        = "dativ"
+
+[[sentences]]
+text        = "Ich hänge das Bild [an] die Wand."
+translation = "I'm hanging the picture on the wall."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Im Sommer fahren wir [ans] Meer."
+translation = "In summer we're going to the seaside."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Er sitzt den ganzen Tag [am] Schreibtisch."
+translation = "He sits at his desk all day."
+case        = "dativ"
+
+[[sentences]]
+text        = "Ich denke oft [an] dich."
+translation = "I often think of you."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Wir treffen uns [am] Montag."
+translation = "We're meeting on Monday."
+case        = "dativ"

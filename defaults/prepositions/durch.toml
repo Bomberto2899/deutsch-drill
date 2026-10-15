@@ -1,0 +1,28 @@
+preposition = "durch"
+meaning     = "through; by (means of)"
+case        = "akkusativ"
+notes       = "In the passive it names the means or cause: \"durch ein Erdbeben zerstört\". Contraction: durchs = durch das."
+
+[[sentences]]
+text        = "Wir laufen [durch] den Park."
+translation = "We walk through the park."
+
+[[sentences]]
+text        = "Ich habe die Nachricht [durch] einen Freund erfahren."
+translation = "I heard the news through a friend."
+
+[[sentences]]
+text        = "Das Licht fällt [durch] das Fenster."
+translation = "The light falls through the window."
+
+[[sentences]]
+text        = "Er ist [durch] die Prüfung gefallen."
+translation = "He failed the exam."
+
+[[sentences]]
+text        = "Die Stadt wurde [durch] ein Erdbeben zerstört."
+translation = "The city was destroyed by an earthquake."
+
+[[sentences]]
+text        = "Wir sind einmal quer [durch] Europa gereist."
+translation = "We once travelled right across Europe."

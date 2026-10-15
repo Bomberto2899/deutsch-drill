@@ -1,0 +1,24 @@
+preposition = "während"
+meaning     = "during"
+case        = "genitiv"
+notes       = "Also a conjunction (\"while\"): Während ich koche, liest er. In everyday speech sometimes with the dative."
+
+[[sentences]]
+text        = "Er hat [während] des Films geschlafen."
+translation = "He slept during the film."
+
+[[sentences]]
+text        = "Bitte nicht [während] des Unterrichts telefonieren."
+translation = "Please no phone calls during class."
+
+[[sentences]]
+text        = "Wir waren [während] der Ferien in Italien."
+translation = "We were in Italy during the holidays."
+
+[[sentences]]
+text        = "Sie hat [während] ihres Studiums in Paris gelebt."
+translation = "She lived in Paris while she was at university."
+
+[[sentences]]
+text        = "Es hat [während] der ganzen Nacht geregnet."
+translation = "It rained throughout the whole night."

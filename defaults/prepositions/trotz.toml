@@ -1,0 +1,24 @@
+preposition = "trotz"
+meaning     = "despite, in spite of"
+case        = "genitiv"
+notes       = "In everyday speech sometimes with the dative: trotz dem Regen."
+
+[[sentences]]
+text        = "Wir gehen [trotz] des Regens spazieren."
+translation = "We're going for a walk despite the rain."
+
+[[sentences]]
+text        = "Er ist [trotz] seiner Erkältung zur Arbeit gegangen."
+translation = "He went to work despite his cold."
+
+[[sentences]]
+text        = "Sie hat [trotz] aller Probleme die Prüfung bestanden."
+translation = "She passed the exam despite all the problems."
+
+[[sentences]]
+text        = "Das Konzert fand [trotz] des schlechten Wetters statt."
+translation = "The concert took place despite the bad weather."
+
+[[sentences]]
+text        = "Er hat [trotz] seines Alters noch viel Energie."
+translation = "Despite his age he still has a lot of energy."

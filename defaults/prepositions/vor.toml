@@ -1,0 +1,34 @@
+preposition = "vor"
+meaning     = "in front of; before; ago"
+case        = "wechsel"
+notes       = "wohin? → Akkusativ, wo? → Dativ. Time (\"ago\", \"before\") and Angst vor take the dative. Contraction: vorm = vor dem."
+
+[[sentences]]
+text        = "Das Auto steht [vor] dem Haus."
+translation = "The car is in front of the house."
+case        = "dativ"
+
+[[sentences]]
+text        = "Er stellt das Fahrrad [vor] die Tür."
+translation = "He puts the bike in front of the door."
+case        = "akkusativ"
+
+[[sentences]]
+text        = "Ich war [vor] zwei Jahren in Rom."
+translation = "I was in Rome two years ago."
+case        = "dativ"
+
+[[sentences]]
+text        = "Wir treffen uns um acht [vor] dem Kino."
+translation = "We're meeting in front of the cinema at eight."
+case        = "dativ"
+
+[[sentences]]
+text        = "Meine Schwester hat Angst [vor] Hunden."
+translation = "My sister is afraid of dogs."
+case        = "dativ"
+
+[[sentences]]
+text        = "Er hat sich direkt [vor] den Fernseher gesetzt."
+translation = "He sat down right in front of the TV."
+case        = "akkusativ"

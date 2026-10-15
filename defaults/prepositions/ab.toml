@@ -1,0 +1,24 @@
+preposition = "ab"
+meaning     = "from (a time or place onwards)"
+case        = "dativ"
+notes       = "With times, the accusative is also common: ab nächste Woche / ab nächster Woche."
+
+[[sentences]]
+text        = "Das Angebot gilt [ab] Montag."
+translation = "The offer is valid from Monday."
+
+[[sentences]]
+text        = "Der Film ist [ab] 12 Jahren freigegeben."
+translation = "The film is rated 12 and over."
+
+[[sentences]]
+text        = "Ich habe [ab] nächster Woche Urlaub."
+translation = "I'm on holiday from next week."
+
+[[sentences]]
+text        = "Der Bus fährt [ab] Hauptbahnhof alle zehn Minuten."
+translation = "The bus runs every ten minutes from the main station."
+
+[[sentences]]
+text        = "Die Bar ist [ab] 18 Uhr geöffnet."
+translation = "The bar is open from 6 pm."

@@ -1,6 +1,6 @@
 # Deutsch Drill
 
-Drill German grammar — conjugation first, more modules later. Svelte frontend, tiny Node backend,
+Drill German grammar: verb conjugation, and prepositions with their cases. Svelte frontend, tiny Node backend,
 runs as a browser app window (Edge/Chrome/Chromium `--app`) with its own profile, so your normal browser is
 untouched. Everything is configured through TOML files. Works on Linux, Windows and macOS.
 
@@ -89,7 +89,7 @@ backend on `127.0.0.1:47321` if it isn't running and opens the app window. The b
 
 | | Linux / macOS | Windows |
 | --- | --- | --- |
-| Settings & verb files | `~/.config/deutsch-drill/` | `%APPDATA%\deutsch-drill\` |
+| Settings, verb and preposition files | `~/.config/deutsch-drill/` | `%APPDATA%\deutsch-drill\` |
 | Progress, server log | `~/.local/state/deutsch-drill/` | `%LOCALAPPDATA%\deutsch-drill\state\` |
 | Browser profile | `~/.local/share/deutsch-drill/` | `%LOCALAPPDATA%\deutsch-drill\` |
 
@@ -102,6 +102,22 @@ Roadmap and progress: [TODO.md](TODO.md).
 
 Navigation: every page has a **← Back** button (Esc does the same): module page (stats, settings) → module → menu.
 German titles and labels show their English translation on hover (or keyboard focus).
+
+## Prepositions
+
+Each round shows a few sentences (3 by default) that share one gap. Type the preposition that fits all of them;
+one sentence alone can be ambiguous, but together only one preposition works. After checking, the gaps are filled
+in (contractions like *ins*, *zum*, *am* included), and a panel shows the preposition's meaning, the case it takes
+and usage notes. For two-way prepositions (*in, an, auf, hinter, neben, über, unter, vor, zwischen*) each sentence
+gets an `Akk · wohin?` / `Dat · wo?` label, and a round always mixes both. If your wrong answer is itself a
+preposition, its meaning is shown too, so you see why it doesn't fit.
+
+Keys: Enter checks, Enter again goes on, Alt+N skips, Esc goes back. Progress (right/wrong per preposition, last 50
+results) is stored in `prepositions.json` in the progress folder and drives `order = "weakest-first"`.
+
+29 prepositions ship: Akkusativ (durch, für, gegen, ohne, um, bis, entlang), Dativ (aus, bei, mit, nach, seit, von,
+zu, gegenüber, ab), two-way (an, auf, hinter, in, neben, über, unter, vor, zwischen) and Genitiv (wegen, trotz,
+während, statt).
 
 ## Stats & progress
 
@@ -131,8 +147,10 @@ Seeded on first run; existing files are never overwritten. Edits are picked up l
 | `config.toml` | Global: answer checking (case, ß/ss), theme, font size |
 | `verbs.toml` | Verb module: tenses + persons to drill, order, what to show, filters, how weakness is measured |
 | `verbs/*.toml` | One file per verb |
+| `prepositions.toml` | Preposition module: sentences per round, order, translations, which cases/prepositions, weakness |
+| `prepositions/*.toml` | One file per preposition, with its sentences |
 
-The settings pages write back to `config.toml` / `verbs.toml` (comments in those two files are regenerated).
+The settings pages write back to `config.toml`, `verbs.toml` and `prepositions.toml` (comments in those files are regenerated).
 
 ### Verb files
 
@@ -191,6 +209,28 @@ Turn tenses on in `[tenses.<id>]` in `verbs.toml` or in the settings page (Präs
 With several tenses on, the drill shows them side by side; the stats page has accuracy by tense.
 Overrides work per tense: `[overrides.<tense id>]`. Derived tags: `regular`, `irregular`, `mixed`,
 `separable`, `stem-change`. Tags set in the files: `modal`, `auxiliary` (sein/haben/werden), `transitive` (enables passive).
+
+### Preposition files
+
+```toml
+preposition = "in"                 # the answer
+meaning     = "in; into"
+case        = "wechsel"            # akkusativ | dativ | genitiv | wechsel (two-way)
+notes       = "wohin? → Akkusativ, wo? → Dativ. Contractions: im = in dem, ins = in das."   # optional
+accept      = []                   # optional: other answers that count, e.g. ["anstatt"] for statt
+tags        = []                   # optional, for the [filter]
+
+[[sentences]]
+text        = "Wir gehen heute Abend [ins] Kino."   # exactly one [gap]
+translation = "We're going to the cinema tonight."  # optional, shown on hover
+case        = "akkusativ"          # required for two-way prepositions; otherwise the file's case
+```
+
+- The gap holds the word as it appears in the sentence, so contractions (`[ins]`, `[zum]`, `[am]`) are fine. The
+  answer is always `preposition` (or one of `accept`).
+- Write sentences where the gap isn't the first word (the answer is lower case), and that point to this one
+  preposition. The drill shows several at once, so each one alone may still fit another preposition.
+- Two-way prepositions need Akkusativ and Dativ sentences, since every round with 2+ sentences shows both.
 
 ## Adding a module
 
