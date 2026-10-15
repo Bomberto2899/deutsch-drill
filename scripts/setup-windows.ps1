@@ -8,7 +8,7 @@
   Options:
     -Desktop     also put a shortcut on the desktop
     -Uninstall   remove the shortcuts (your settings and progress in %APPDATA%\deutsch-drill are kept)
-  Run it again after `git pull` to update.
+  To update later: node scripts\update.ts (or run this script again after `git pull`).
 #>
 param([switch]$Desktop, [switch]$Uninstall)
 

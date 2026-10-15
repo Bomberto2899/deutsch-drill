@@ -45,7 +45,10 @@ Step by step, starting from a fresh Windows 10/11 machine:
 5. **Start it:** open the Start menu and launch **Deutsch Drill**. It opens in its own Microsoft Edge window
    (separate from your normal browser). If Edge shows a welcome screen the first time, just close it.
 
-**Updating:** in PowerShell, `cd ~\deutsch-drill`, then `git pull`, then run the setup script again (step 4).
+**Updating:** in PowerShell, `cd ~\deutsch-drill`, then `node scripts\update.ts`. It downloads the new version
+(`git pull`), reinstalls dependencies if needed, rebuilds and refreshes the shortcut. If the app is open, close it
+and start it again afterwards. (First update from a version without this script: run `git pull` once, then the
+setup script again — step 4.)
 
 **Uninstalling:** run the setup script with `-Uninstall` to remove the shortcuts, then delete the
 `deutsch-drill` folder. Your settings and progress stay in `%APPDATA%\deutsch-drill` and
@@ -74,11 +77,12 @@ npm run install-app   # build + ~/.local/bin/deutsch-drill + desktop entry + ico
 deutsch-drill         # or launch "Deutsch Drill" from the app launcher
 ```
 
-To update: `git pull && npm ci && npm run install-app`. Remove with `node scripts/install-app.ts --uninstall`.
+To update: `npm run update` (git pull, `npm ci` if dependencies changed, build, refresh the launcher; `--force`
+rebuilds even when nothing new was pulled). Remove with `node scripts/install-app.ts --uninstall`.
 
 ### macOS
 
-`npm ci && npm run build`, then start it with `npm run launch` (no Dock/Launchpad entry yet).
+`npm ci && npm run build`, then start it with `npm run launch` (no Dock/Launchpad entry yet). To update: `npm run update`.
 
 ### How it runs
 

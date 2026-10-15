@@ -12,7 +12,8 @@
     "check": "node src/server/check.ts",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json",
     "install-app": "npm run build && node scripts/install-app.ts",
-    "launch": "node bin/deutsch-drill.ts"
+    "launch": "node bin/deutsch-drill.ts",
+    "update": "node scripts/update.ts"
   },
   "dependencies": {
     "smol-toml": "^1.9.1"

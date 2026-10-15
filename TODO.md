@@ -93,6 +93,9 @@ Workflow: new requests are added here first, then checked off when done. Every c
 - [x] Progress per preposition in `prepositions.json`; shared progress helpers moved to `src/shared/progress.ts`
 - [x] Tests: validation, sentence picking, filters, order, and every shipped file (gaps are the preposition or a contraction of it)
 
+## Done — v0.9 (2026-10-15): Update script
+- [x] `npm run update` / `node scripts/update.ts`: git pull (fast-forward only, refuses with local changes), `npm ci` only when dependencies changed, build, refresh the launcher, and a restart hint when the app is open; `--force` rebuilds anyway. Runs its remaining steps from the freshly pulled copy of itself. README update instructions for Windows, Linux and macOS
+
 ## Next
 
 - [ ] Test the Windows setup on a real Windows machine (the friend's): setup script, Start-menu shortcut, Edge app window, settings in `%APPDATA%`. Not testable here (no Windows/PowerShell)
