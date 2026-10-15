@@ -95,6 +95,7 @@ Workflow: new requests are added here first, then checked off when done. Every c
 
 ## Done — v0.9 (2026-10-15): Update script
 - [x] `npm run update` / `node scripts/update.ts`: git pull (fast-forward only, refuses with local changes), `npm ci` only when dependencies changed, build, refresh the launcher, and a restart hint when the app is open; `--force` rebuilds anyway. Runs its remaining steps from the freshly pulled copy of itself. README update instructions for Windows, Linux and macOS
+- [x] Windows: `.\update.ps1` in the repo root (installs Node via the setup script if missing) and `update.cmd` (double-click; works when PowerShell scripts are blocked)
 
 ## Next
 

@@ -45,10 +45,11 @@ Step by step, starting from a fresh Windows 10/11 machine:
 5. **Start it:** open the Start menu and launch **Deutsch Drill**. It opens in its own Microsoft Edge window
    (separate from your normal browser). If Edge shows a welcome screen the first time, just close it.
 
-**Updating:** in PowerShell, `cd ~\deutsch-drill`, then `node scripts\update.ts`. It downloads the new version
-(`git pull`), reinstalls dependencies if needed, rebuilds and refreshes the shortcut. If the app is open, close it
-and start it again afterwards. (First update from a version without this script: run `git pull` once, then the
-setup script again — step 4.)
+**Updating:** in PowerShell, `cd ~\deutsch-drill`, then `.\update.ps1` (or double-click `update.cmd` in the folder).
+It downloads the new version (`git pull`), reinstalls dependencies if needed, rebuilds and refreshes the shortcut;
+`-Force` rebuilds even when nothing new was downloaded. If the app is open, close it and start it again afterwards.
+If PowerShell says "running scripts is disabled on this system", use `.\update.cmd` instead. (First update from a
+version without these files: run `git pull` once, then the setup script again — step 4.)
 
 **Uninstalling:** run the setup script with `-Uninstall` to remove the shortcuts, then delete the
 `deutsch-drill` folder. Your settings and progress stay in `%APPDATA%\deutsch-drill` and
